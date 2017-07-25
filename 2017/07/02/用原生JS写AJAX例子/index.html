@@ -8,7 +8,7 @@
   <meta name="description" content="AJAXMDN_AJAX 手写AJAX的主要四个步骤：1.创建XMLHttpReauest2.处理响应（指定响应函数）3.打开链接（指定请求）4.发送请求 123456789101112131415161718192021222324252627282930&amp;lt;button id=&quot;ajaxButton&quot; type=&quot;button&quot;&amp;gt;Make a request&amp;lt;/button&amp;g">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用原生JS写AJAX例子">
-<meta property="og:url" content="http://yoursite.com/2017/07/02/用原生JS写AJAX例子/index.html">
+<meta property="og:url" content="https://gl09025.github.io/hexo-blog/2017/07/02/用原生JS写AJAX例子/index.html">
 <meta property="og:site_name" content="GanLi">
 <meta property="og:description" content="AJAXMDN_AJAX 手写AJAX的主要四个步骤：1.创建XMLHttpReauest2.处理响应（指定响应函数）3.打开链接（指定请求）4.发送请求 123456789101112131415161718192021222324252627282930&amp;lt;button id=&quot;ajaxButton&quot; type=&quot;button&quot;&amp;gt;Make a request&amp;lt;/button&amp;g">
 <meta property="og:locale" content="zh">
@@ -25,7 +25,7 @@
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/hexo-blog/css/style.css">
   
 
 </head>
@@ -38,11 +38,11 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">GanLi</a>
+        <a href="/hexo-blog/" id="logo">GanLi</a>
       </h1>
       
         <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">热爱前端</a>
+          <a href="/hexo-blog/" id="subtitle">热爱前端</a>
         </h2>
       
     </div>
@@ -50,19 +50,19 @@
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <a class="main-nav-link" href="/">Home</a>
+          <a class="main-nav-link" href="/hexo-blog/">Home</a>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          <a class="main-nav-link" href="/hexo-blog/archives">Archives</a>
         
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS-каналы"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Поиск"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://gl09025.github.io/hexo-blog"></form>
       </div>
     </div>
   </div>
@@ -70,7 +70,7 @@
       <div class="outer">
         <section id="main"><article id="post-用原生JS写AJAX例子" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/07/02/用原生JS写AJAX例子/" class="article-date">
+    <a href="/hexo-blog/2017/07/02/用原生JS写AJAX例子/" class="article-date">
   <time datetime="2017-07-02T02:54:37.000Z" itemprop="datePublished">2017-07-02</time>
 </a>
     
@@ -92,11 +92,11 @@
       
         <h2 id="AJAX"><a href="#AJAX" class="headerlink" title="AJAX"></a>AJAX</h2><p><a href="https://developer.mozilla.org/zh-CN/docs/AJAX/Getting_Started" target="_blank" rel="external">MDN_AJAX</a></p>
 <p>手写AJAX的主要四个步骤：<br>1.创建XMLHttpReauest<br>2.处理响应（指定响应函数）<br>3.打开链接（指定请求）<br>4.发送请求</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"ajaxButton"</span> <span class="attr">type</span>=<span class="string">"button"</span>&gt;</span>Make a request<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">(function() &#123;</div><div class="line">  var httpRequest;</div><div class="line">  document.getElementById("ajaxButton").addEventListener('click', makeRequest);//按钮添加点击事件</div><div class="line"></div><div class="line">  function makeRequest() &#123;</div><div class="line">    httpRequest = new XMLHttpRequest();//创建XMLHttpRequest对象</div><div class="line"></div><div class="line">    if (!httpRequest) &#123;</div><div class="line">      alert('Giving up :( Cannot create an XMLHTTP instance');</div><div class="line">      return false;</div><div class="line">    &#125;</div><div class="line">    httpRequest.onreadystatechange = alertContents;//指定相应函数</div><div class="line">    httpRequest.open('GET', 'test.html');//打开链接</div><div class="line">    httpRequest.send();//发送请求</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  function alertContents() &#123;</div><div class="line">    if (httpRequest.readyState === XMLHttpRequest.DONE) &#123;</div><div class="line">      if (httpRequest.status === 200) &#123;</div><div class="line">        alert(httpRequest.responseText);</div><div class="line">      &#125; else &#123;</div><div class="line">        alert('There was a problem with the request.');</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;)();</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"ajaxButton"</span> <span class="attr">type</span>=<span class="string">"button"</span>&gt;</span>Make a request<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> httpRequest;</div><div class="line">  <span class="built_in">document</span>.getElementById(<span class="string">"ajaxButton"</span>).addEventListener(<span class="string">'click'</span>, makeRequest);<span class="comment">//按钮添加点击事件</span></div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="title">makeRequest</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    httpRequest = <span class="keyword">new</span> XMLHttpRequest();<span class="comment">//创建XMLHttpRequest对象</span></div><div class="line"></div><div class="line">    <span class="keyword">if</span> (!httpRequest) &#123;</div><div class="line">      alert(<span class="string">'Giving up :( Cannot create an XMLHTTP instance'</span>);</div><div class="line">      <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">    httpRequest.onreadystatechange = alertContents;<span class="comment">//指定相应函数</span></div><div class="line">    httpRequest.open(<span class="string">'GET'</span>, <span class="string">'test.html'</span>);<span class="comment">//打开链接</span></div><div class="line">    httpRequest.send();<span class="comment">//发送请求</span></div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="title">alertContents</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (httpRequest.readyState === XMLHttpRequest.DONE) &#123;</div><div class="line">      <span class="keyword">if</span> (httpRequest.status === <span class="number">200</span>) &#123;</div><div class="line">        alert(httpRequest.responseText);</div><div class="line">      &#125; <span class="keyword">else</span> &#123;</div><div class="line">        alert(<span class="string">'There was a problem with the request.'</span>);</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;)();</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/02/用原生JS写AJAX例子/" data-id="cj5jb6brb0000z2w04r9xkqrc" class="article-share-link">Поделиться</a>
+      <a data-url="https://gl09025.github.io/hexo-blog/2017/07/02/用原生JS写AJAX例子/" data-id="cj5jcnxom0001dfw0hwd8ci7n" class="article-share-link">Share</a>
       
       
     </footer>
@@ -105,8 +105,8 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/07/25/使用原生JS实现事件委托/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Следующий</strong>
+    <a href="/hexo-blog/2017/07/25/使用原生JS实现事件委托/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
           使用原生JS实现事件委托
@@ -134,9 +134,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Архив</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/hexo-blog/archives/2017/07/">July 2017</a></li></ul>
     </div>
   </div>
 
@@ -144,16 +144,16 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Недавние записи</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2017/07/25/使用原生JS实现事件委托/">使用原生JS实现事件委托</a>
+            <a href="/hexo-blog/2017/07/25/使用原生JS实现事件委托/">使用原生JS实现事件委托</a>
           </li>
         
           <li>
-            <a href="/2017/07/02/用原生JS写AJAX例子/">用原生JS写AJAX例子</a>
+            <a href="/hexo-blog/2017/07/02/用原生JS写AJAX例子/">用原生JS写AJAX例子</a>
           </li>
         
       </ul>
@@ -169,16 +169,16 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 Gan Li<br>
-      Создано с помощью <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
     </div>
     <nav id="mobile-nav">
   
-    <a href="/" class="mobile-nav-link">Home</a>
+    <a href="/hexo-blog/" class="mobile-nav-link">Home</a>
   
-    <a href="/archives" class="mobile-nav-link">Archives</a>
+    <a href="/hexo-blog/archives" class="mobile-nav-link">Archives</a>
   
 </nav>
     
@@ -186,11 +186,11 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" href="/hexo-blog/fancybox/jquery.fancybox.css">
+  <script src="/hexo-blog/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js"></script>
+<script src="/hexo-blog/js/script.js"></script>
 
   </div>
 </body>
