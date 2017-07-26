@@ -6,7 +6,8 @@ cache:
     - node_modules
 before_install:
   # Decrypt the private key
-  - openssl aes-256-cbc -K $encrypted_5bded48ce458_key -iv $encrypted_5bded48ce458_iv -in .travis/id_rsa_deploy.enc -out ~\/.ssh/id_rsa_deploy -d
+  - openssl aes-256-cbc -K $encrypted_5bded48ce458_key -iv $encrypted_5bded48ce458_iv
+  -in .travis/id_rsa_deploy.enc -out ~\/.ssh/id_rsa_deploy -d
   # Set the permission of the key
   - chmod 600 ~/.ssh/id_rsa_deploy
   # Start SSH agent
