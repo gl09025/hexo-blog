@@ -105,8 +105,8 @@ script:
 after_script:
   - cd ./public
   - git init
-  - git config user.name "ganli"
-  - git config user.email "gl09025@gmail.com"
+  - git config user.name "username"
+  - git config user.email "username@gmail.com"
   - git add .
   - git commit -m "Update docs"
   - git push --force --quiet "https://${githubblog}@${GH_REF}" master:master
@@ -120,3 +120,13 @@ env:
    - GH_REF: github.com/gl09025/hexo-blog.git
 ```
 配置完成后推送到仓库中，我们就能看到网站中在部署了。
+
+![travis_build](https://raw.githubusercontent.com/gl09025/image_respository/master/2017%E5%B9%B47%E6%9C%8826%E6%97%A5/%E4%BD%BF%E7%94%A8Travis%20CI%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/travis_build.png)
+
+<div style="display: none">
+<p>影藏的参考链接</p>
+http://blog.csdn.net/woblog/article/details/51319364
+http://www.jianshu.com/p/7cd484bd6dc1
+https://levirve.github.io/2016/hexo-deploy-through-travisci/
+https://www.zhihu.com/question/21193762
+</div> 
