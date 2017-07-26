@@ -1,6 +1,5 @@
 language: node_js
-node_js: 
-  - "8"
+node_js: stable
 
 cache:
   directories:
@@ -31,6 +30,7 @@ install:
 
 
 script:
+  - hexo clean
   - hexo generate
   - hexo deploy
 branches:
