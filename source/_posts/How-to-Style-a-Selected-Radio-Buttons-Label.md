@@ -6,6 +6,8 @@ thumbnail:
 ---
 选中radio按钮改变样式
 
+<a class="jsbin-embed" href="http://jsbin.com/katemofega/2/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+
 [效果演示](http://jsbin.com/katemofega/2/edit?html,css,output)
 
 ```markup
