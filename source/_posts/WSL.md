@@ -1,7 +1,7 @@
 ---
 title: 让WSL变得更好看
 date: 2017-02-19 16:43:03
-tags: WSL windows10
+tags: [WSL,windows10]
 ---
 ### 首先开启windows10上面的bash
 [参考官方教程](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)
@@ -25,18 +25,18 @@ tags: WSL windows10
 [Github](https://github.com/seebi/dircolors-solarized)
 
 将仓库克隆下来，找个位置放一下。我就直接放在
-```
+```bash
 ~/Git
 ```
 再执行这条语句
-```
+```bash
 eval `dircolors ~/Git/dircolors-solarized/dircolors.256dark`
 ```
 
 
 #### 安装nodejs和npm
 
-```
+```bash
 sudo apt-get autoremove --purge npm node nodejs
 curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 sudo apt-get install -y nodejs
@@ -48,7 +48,7 @@ sudo npm install -g npm
 
 ##### npm i -g vue-cli 出错
 
-```
+```bash
 $ npm install -g async
 $ npm install -g abbrev
 $ npm install -g http-errors
