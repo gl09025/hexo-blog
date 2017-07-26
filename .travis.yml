@@ -1,8 +1,10 @@
 language: node_js
 node_js: 
   - "8"
-install:
-  - npm install
+
+cache:
+  directories:
+    - node_modules
 before_install:
   # Decrypt the private key
 - openssl aes-256-cbc -K $encrypted_5bded48ce458_key -iv $encrypted_5bded48ce458_iv -in .travis/id_rsa_deploy.enc -out ~\/.ssh/id_rsa_deploy -d
@@ -18,11 +20,15 @@ before_install:
   - git config --global user.name "ganli"
   - git config --global user.email gl09025@gmail.com
   # Install Hexo
-  - npm install 
+  - npm install hexo-cli -g
   # Clone the repository
   - git clone https://github.com/gl09025/hexo-blog.git .deploy
-  - cd .deploy_git && git checkout master
-  - cd ..
+
+
+
+install:
+  - npm install
+
 
 script:
   - hexo generate
