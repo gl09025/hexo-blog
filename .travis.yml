@@ -1,5 +1,6 @@
 language: node_js
 node_js: stable
+dist: trusty
 install:
   - npm install
 before_install:
