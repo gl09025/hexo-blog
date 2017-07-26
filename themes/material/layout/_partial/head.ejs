@@ -182,3 +182,9 @@
         <% } %>
     <% } %>
 </head>
+    <!-- fancybox support -->
+    <% if(theme.fancybox === true) { %>
+        <%- css('lib/fancybox/dist/jquery.fancybox.min') %>
+        <%- js('lib/fancybox/dist/jquery.fancybox.min') %>
+        <%- js('js/wrapImage.js') %>
+    <% }%>
