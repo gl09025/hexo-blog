@@ -63,10 +63,10 @@ thumbnail:
 #         type available value: A (animal), C (culture), N (nature), S (space), T (travel)
 background:
     purecolor: "#F5F5F5"
-    #bgimg: "/img/bg.png"
+    bgimg: "/img/bg.png"
     bing:
         enable: false
-        parameter:
+        parameter: type=A 
 
 # Images Settings
 img:
@@ -95,7 +95,7 @@ card_elevation: 2
 # Copyright
 # Specify the date when the site was setup.
 #   For example, if you set it as 2015, then footer will show '© 2015 - 2017'
-copyright_since:
+copyright_since: 
 
 # Qrcode for redirect at other device
 #   use: choose which method to generate the qrcode for each posts.
@@ -120,23 +120,13 @@ toc:
 
 # SNS Menu
 sns:
-    email: youremail@email.com
-    facebook: "https://www.facebook.com/facebook"
-    twitter: "https://twitter.com/twitter"
-    googleplus: "https://www.google.com/"
-    weibo:
-    instagram:
-    tumblr:
-    github:
-    linkedin:
-    zhihu:
-    bilibili:
-    telegram:
+    email: gl09025@gmail.com
+    github: https://github.com/gl09025
 
 # SNS Share Switch
 sns_share:
     twitter: true
-    facebook: true
+    facebook: false
     googleplus: true
     weibo: true
     linkedin: false
@@ -147,7 +137,7 @@ sns_share:
 sidebar:
     dropdown:
         Email Me:
-            link: "#"
+            link: "mailto:gl09025@gmail.com"
             icon: email
     homepage:
         use: true
@@ -162,12 +152,15 @@ sidebar:
         icon: chrome_reader_mode
         divider: false
     pages:
-        #About:
-            #link: "/about"
-            #icon: person
-            #divider: false
+        标签云:
+            link: "/tags"
+            icon: cloud
+            divider: false
+        时间轴:
+            link: "/timeline"
+            divider: false
     article_num:
-        use: false
+        use: true
         divider: false
     footer:
         divider: true
@@ -203,15 +196,17 @@ comment:
 # Available value:
 #     swiftype | google | local
 search:
-    use: google
-    swiftype_key:
+#     # use: google
+    use: local
+#     swiftype_key: RnNstssZQxuyKLwVTq4V
+
 
 # Analytics Systems
 # Available value:
 #     baidu | google | cnzz
-analytics:
-    use:
-    site_id:
+analytics: 
+    use: baidu
+    site_id: 9aaece14b088cbf1c73ee757b18fc1a8
 
 # Leancloud Views
 leancloud:
@@ -222,7 +217,7 @@ leancloud:
 
 # Busuanzi 不蒜子 Views
 busuanzi:
-    enable: false
-    all_site_uv: false
-    post_pv: false
+    enable: true
+    all_site_uv: true
+    post_pv: true
     busuanzi_pure_mini_js: "https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"

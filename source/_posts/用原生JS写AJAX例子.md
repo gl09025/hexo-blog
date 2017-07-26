@@ -1,7 +1,7 @@
 ---
 title: 用原生JS写AJAX例子
 date: 2017-07-21 10:54:37
-tags:
+tags: JS
 ---
 ## AJAX
 
@@ -13,7 +13,7 @@ tags:
 3.打开链接（指定请求）
 4.发送请求
 
-```html
+```javascript
 <button id="ajaxButton" type="button">Make a request</button>
 
 <script>

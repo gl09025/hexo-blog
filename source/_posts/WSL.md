@@ -1,9 +1,8 @@
 ---
 title: 让WSL变得更好看
 date: 2017-02-19 16:43:03
-tags:
+tags: WSL windows10
 ---
-
 ### 首先开启windows10上面的bash
 [参考官方教程](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)
 

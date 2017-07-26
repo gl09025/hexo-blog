@@ -1,9 +1,9 @@
 ---
 title: 使用原生JS实现事件委托
 date: 2017-04-17 22:03:02
-tags:
+tags: JS
+thumbnail: 
 ---
-
 ## 事件
 
 在使用JavaScript与DOM交互时,事件是用到的比较多的.

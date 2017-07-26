@@ -1,10 +1,8 @@
 ---
 title: 安装shasowsocks
 date: 2017-02-19 16:43:03
-tags:
+tags: SS
 ---
- 
-
 ### ubuntu
 ```
 sudo apt-get install python-pip

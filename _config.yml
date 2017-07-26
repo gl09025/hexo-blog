@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Andrew
-subtitle: 热爱前端
-description:
-author: Gan Li
+title: GanLi's Blog
+subtitle: 前端
+description: 前端
+author: GanLi
 language: zh-CN
 timezone:
 
@@ -38,8 +38,8 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
+  enable: false
+  line_number: false
   auto_detect: false
   tab_replace:
   
@@ -83,3 +83,12 @@ deploy:
   branch: master
   name: ganli
   email: gl09025@gmail.com
+
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'default'
+  line_number: false    # default false
+
+search:
+  path: search.xml
+  field: post
