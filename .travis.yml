@@ -27,4 +27,4 @@ branches:
     - blog-resource
 env:
  global:
-   - GH_REF: git@github.com:gl09025/hexo-blog.git
+   - GH_REF: github.com:gl09025/hexo-blog.git
