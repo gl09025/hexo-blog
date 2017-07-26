@@ -123,6 +123,14 @@ env:
 
 ![travis_build](https://raw.githubusercontent.com/gl09025/image_respository/master/2017%E5%B9%B47%E6%9C%8826%E6%97%A5/%E4%BD%BF%E7%94%A8Travis%20CI%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/travis_build.png)
 
+
+### 使用SSH来部署
+  由于access token的权限太大了，我们可以使用仓库的deploy key来部署
+  主要参考：
+  [Hexo作者的文章](https://zespia.tw/blog/2015/01/21/continuous-deployment-to-github-with-travis/)
+  [用 Travis CI 自動部屬 hexo 到 GitHub](https://ssarcandy.tw/2016/07/29/hexo-auto-deploy/)
+  [用Travis CI自动部署Hexo博客](https://www.karlzhou.com/2016/05/28/travis-ci-deploy-blog/)
+
 <div style="display: none">
 <p>影藏的参考链接</p>
 http://blog.csdn.net/woblog/article/details/51319364
