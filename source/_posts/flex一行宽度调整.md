@@ -1,5 +1,5 @@
 ---
-title: 表单提交与阻止默认动作
+title: flex一行宽度调整
 date: 2017-08-15 12:42:42
 tags: CSS
 thumbnail:
