@@ -131,6 +131,33 @@ env:
   [用 Travis CI 自動部屬 hexo 到 GitHub](https://ssarcandy.tw/2016/07/29/hexo-auto-deploy/)
   [用Travis CI自动部署Hexo博客](https://www.karlzhou.com/2016/05/28/travis-ci-deploy-blog/)
 
+### 为网站添加免费的HTTPS
+
+使用[netlify](https://app.netlify.com/)来为自己的网站添加https
+步骤如下：
+使用github登录
+1.创建新网站
+![new site from Git](https://raw.githubusercontent.com/gl09025/image_respository/master/2017%E5%B9%B49%E6%9C%885%E6%97%A5/%E4%BD%BF%E7%94%A8Travis%20CI%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/newsitefromGit.png)
+2.选择从github创建
+![](https://raw.githubusercontent.com/gl09025/image_respository/master/2017%E5%B9%B49%E6%9C%885%E6%97%A5/%E4%BD%BF%E7%94%A8Travis%20CI%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/createANewSite.png)
+3.选择仓库
+![](https://raw.githubusercontent.com/gl09025/image_respository/master/2017%E5%B9%B49%E6%9C%885%E6%97%A5/%E4%BD%BF%E7%94%A8Travis%20CI%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/select-repository.png)
+
+4.参数可以都填空，如果是已经使用了Travis CI来部署的话
+![](https://raw.githubusercontent.com/gl09025/image_respository/master/2017%E5%B9%B49%E6%9C%885%E6%97%A5/%E4%BD%BF%E7%94%A8Travis%20CI%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/configure-site.png)
+
+5.填写自定义域名
+![](https://raw.githubusercontent.com/gl09025/image_respository/master/2017%E5%B9%B49%E6%9C%885%E6%97%A5/%E4%BD%BF%E7%94%A8Travis%20CI%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/domain-settings.png)
+这里我的域名已经改变，你看到的域名应该是自动分配的一个域名。在域名设置里面我这里使用的是自他的域名解析服务，只需要在域名解析后台添加CNAME解析就可以了。
+
+
+6.在域名解析后台添加CNAME解析
+![](https://raw.githubusercontent.com/gl09025/image_respository/master/2017%E5%B9%B49%E6%9C%885%E6%97%A5/%E4%BD%BF%E7%94%A8Travis%20CI%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/cname.png)
+
+7.强制开启HTTPS
+![](https://raw.githubusercontent.com/gl09025/image_respository/master/2017%E5%B9%B49%E6%9C%885%E6%97%A5/%E4%BD%BF%E7%94%A8Travis%20CI%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/HTTPS.png)
+在netlify后台的项目的设置中Domain management下可以看到HTTPS的选项有个Force TLS connections选中之后等一会就是强制HTTPS访问了
+
 <div style="display: none">
 <p>影藏的参考链接</p>
 http://blog.csdn.net/woblog/article/details/51319364
