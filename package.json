@@ -21,6 +21,6 @@
     "hexo-server": "^0.2.0"
   },
   "devDependencies": {
-    "hexo-material": "^1.4.0"
+    "hexo-material": "^1.5.0"
   }
 }

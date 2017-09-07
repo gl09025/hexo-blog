@@ -1,28 +1,28 @@
 {
-  "_from": "hexo-material",
-  "_id": "hexo-material@1.4.0",
+  "_from": "hexo-material@1.5.0",
+  "_id": "hexo-material@1.5.0",
   "_inBundle": false,
-  "_integrity": "sha1-mOhZWLUqdlK4Rb8ESklph4jCfhA=",
+  "_integrity": "sha1-LbEmf0XymjNvE9tdhi67+t4Eseo=",
   "_location": "/hexo-material",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "hexo-material",
+    "raw": "hexo-material@1.5.0",
     "name": "hexo-material",
     "escapedName": "hexo-material",
-    "rawSpec": "",
+    "rawSpec": "1.5.0",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "1.5.0"
   },
   "_requiredBy": [
-    "#USER",
-    "/"
+    "#DEV:/",
+    "#USER"
   ],
-  "_resolved": "http://registry.npm.taobao.org/hexo-material/download/hexo-material-1.4.0.tgz",
-  "_shasum": "98e85958b52a7652b845bf044a49698788c27e10",
-  "_spec": "hexo-material",
-  "_where": "/mnt/d/gitspace/hexo-init",
+  "_resolved": "http://registry.npm.taobao.org/hexo-material/download/hexo-material-1.5.0.tgz",
+  "_shasum": "2db1267f45f29a336f13db5d862ebbfade04b1ea",
+  "_spec": "hexo-material@1.5.0",
+  "_where": "/mnt/d/gitspace/hexo-blog",
   "author": {
     "name": "Viosey"
   },
@@ -56,5 +56,5 @@
     "setup": "npm cache clean && npm install",
     "test": "echo \"Error: no test specified\""
   },
-  "version": "1.4.0"
+  "version": "1.5.0"
 }
