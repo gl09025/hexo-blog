@@ -1,5 +1,5 @@
 ---
-title: js闭包题目.md
+title: js闭包题目
 date: 2017-9-13 15:33:17
 tags: js
 thumbnail:
