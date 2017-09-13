@@ -29,3 +29,5 @@ script:
 branches:
   only:
     - blog-resource
+notifications:
+  webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
