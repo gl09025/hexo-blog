@@ -40,7 +40,7 @@ thumbnail:
 ![githubpages_cunstomdomain](https://raw.githubusercontent.com/gl09025/image_respository/master/2017%E5%B9%B47%E6%9C%8826%E6%97%A5/%E4%BD%BF%E7%94%A8Travis%20CI%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/githubpages_cunstomdomain.png)
 
 在域名解析网站后台添加CNAME解析
-![dns_cname]https://raw.githubusercontent.com/gl09025/image_respository/master/2017%E5%B9%B47%E6%9C%8826%E6%97%A5/%E4%BD%BF%E7%94%A8Travis%20CI%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/dns_cname.png
+![dns_cname](https://raw.githubusercontent.com/gl09025/image_respository/master/2017%E5%B9%B47%E6%9C%8826%E6%97%A5/%E4%BD%BF%E7%94%A8Travis%20CI%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/dns_cname.png)
 
 **重要的一步**，我们要在你的Hexo仓库的source文件夹下添加名为`CNAME` 的文件，注意全部大写，里面内容就写你的自定义域名。如果没有这个文件，每次推送自定义域名都会回到初始的username.github.io
 
