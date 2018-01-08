@@ -30,7 +30,7 @@ branches:
   only:
     - blog-resource
 script:
-    - cd ./deploy
+    - cd ./public
     - git init
     - git remote add origin https://$coding_name:$coding_password@git.coding.net/gl09025/hexoblog.git
     - git add .
