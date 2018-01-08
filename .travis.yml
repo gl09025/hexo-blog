@@ -29,5 +29,12 @@ script:
 branches:
   only:
     - blog-resource
+after_success:
+    - cd ./deploy
+    - git init
+    - git remote add origin https://$coding_name:$coding_password@git.coding.net/gl09025/hexoblog.git
+    - git add .
+    - git commit -m "update hexoblog in coding"
+    - git push -f origin master
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
