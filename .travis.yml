@@ -25,17 +25,17 @@ before_install:
 
 script:
   - hexo generate
+  - ls -la
   - hexo deploy
 branches:
   only:
     - blog-resource
-script:
-    - ls -la
-    # - cd ./public
-    # - git init
-    # - git remote add origin https://$coding_name:$coding_password@git.coding.net/gl09025/hexoblog.git
-    # - git add .
-    # - git commit -m "update hexoblog in coding"
-    # - git push -f origin master
+# script:
+#     - cd .deploy
+#     - git init
+#     - git remote add origin https://$coding_name:$coding_password@git.coding.net/gl09025/hexoblog.git
+#     - git add .
+#     - git commit -m "update hexoblog in coding"
+#     - git push -f origin master
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
