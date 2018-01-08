@@ -1,7 +1,12 @@
 ---
 title: 用原生JS写AJAX例子
 date: 2017-07-21 10:54:37
-tags: JS
+updated: 2018-01-09 02:19:04
+tags: 
+  - JS
+categories:
+  - 技术
+thumbnail:
 ---
 ## AJAX
 

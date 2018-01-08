@@ -1,7 +1,11 @@
 ---
 title: vim粘贴缩进
 date: 2017-9-12 18:24:14
-tags: vim
+updated: 2018-01-09 02:19:04
+tags: 
+  - VIM
+categories:
+  - 技术
 thumbnail:
 ---
 

@@ -1,7 +1,12 @@
 ---
 title: 使用Travis CI持续部署Hexo博客
 date: 2017-02-08 14:24:05
-tags: [Hexo,Travis CI]
+updated: 2018-01-09 02:19:04
+tags: 
+  - Hexo
+  - Travis ci
+categories:
+  - 技术
 thumbnail:
 ---
 ## 思路

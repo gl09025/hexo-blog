@@ -1,7 +1,11 @@
 ---
 title: HTML-Form知识点小结
 date: 2017-02-12 21:56:18
-tags: [HTML,Form]
+updated: 2018-01-09 02:19:04
+tags: 
+  - HTML
+categories:
+  - 技术
 thumbnail:
 ---
 ## 1.form表单有什么作用？有哪些常用的input标签，分别有什么作用

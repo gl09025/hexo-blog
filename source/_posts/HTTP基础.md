@@ -1,7 +1,11 @@
 ---
 title: HTTP基础
 date: 2017-02-25 15:44:47
-tags: HTTP
+updated: 2018-01-09 02:19:04
+tags: 
+  - HTTP
+categories:
+  - 技术
 thumbnail:
 ---
 HTTP：Hyper Text Transfer Protocol:超文本传输协议

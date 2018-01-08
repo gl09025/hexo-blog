@@ -1,7 +1,12 @@
 ---
 title: DOM获取元素的方法
 date: 2017-04-17 23:28:47
-tags: JS
+updated: 2018-01-09 02:19:04
+tags: 
+  - JS
+  - DOM
+categories:
+  - 技术
 thumbnail:
 ---
 

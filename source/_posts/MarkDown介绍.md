@@ -1,7 +1,11 @@
 ---
 title: MarkDown介绍
 date: 2017-02-09 23:45:25
-tags: MarkDown
+updated: 2018-01-09 02:19:04
+tags: 
+  - Markdown
+categories:
+  - 技术
 thumbnail:
 ---
 

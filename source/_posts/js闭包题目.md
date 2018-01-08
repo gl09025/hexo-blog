@@ -1,7 +1,11 @@
 ---
 title: js闭包题目
 date: 2017-9-13 15:33:17
-tags: js
+updated: 2018-01-09 02:19:04
+tags: 
+  - JS
+categories:
+  - 技术
 thumbnail:
 ---
 >实现函数 makeClosures，调用之后满足如下条件：

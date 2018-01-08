@@ -1,7 +1,12 @@
 ---
 title: CSS居中小结
 date: 2017-03-22 14:26:53
-tags: CSS
+updated: 2018-01-09 02:19:04
+tags: 
+  - CSS
+  - README
+categories:
+  - 技术
 thumbnail:
 ---
 最近在学习CSS居中,居中里面又包含水平居中和垂直居中,分不太清内联元素(inline or inline-* elements)和块元素(block level element)居中到底应该怎么来居中,记住一个忘了另一个.翻译一篇CSS-TRICKS上的居中完全指南来理清自己的思绪.

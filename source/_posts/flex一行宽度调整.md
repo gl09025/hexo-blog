@@ -1,7 +1,11 @@
 ---
 title: flex一行宽度调整
 date: 2017-08-15 12:42:42
-tags: CSS
+updated: 2018-01-09 02:19:04
+tags: 
+  - CSS
+categories:
+  - 技术
 thumbnail:
 ---
 

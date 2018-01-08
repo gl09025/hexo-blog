@@ -1,7 +1,12 @@
 ---
 title: 安装shasowsocks
 date: 2017-02-19 16:43:03
-tags: SS
+updated: 2018-01-09 02:19:04
+tags: 
+  - SS
+categories:
+  - 科学上网
+thumbnail:
 ---
 ### ubuntu
 ```bash

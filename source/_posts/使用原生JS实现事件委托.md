@@ -1,7 +1,11 @@
 ---
 title: 使用原生JS实现事件委托
 date: 2017-04-17 22:03:02
-tags: JS
+updated: 2018-01-09 02:19:04
+tags: 
+  - JS
+categories:
+  - 技术
 thumbnail: 
 ---
 ## 事件

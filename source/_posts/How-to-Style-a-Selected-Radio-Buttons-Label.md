@@ -1,7 +1,11 @@
 ---
 title: How to Style a Selected Radio Buttons Label
 date: 2017-07-26 15:00:59
-tags: CSS
+updated: 2018-01-09 02:19:04
+tags: 
+  - CSS
+categories:
+  - 技术
 thumbnail:
 ---
 选中radio按钮改变样式

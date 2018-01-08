@@ -96,4 +96,4 @@ prism_plugin:
 
 search:
   path: search.xml
-  field: post
+  field: all

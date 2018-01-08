@@ -1,7 +1,11 @@
 ---
 title: white-space
 date: 2017-06-01 15:04:43
-tags: CSS   
+updated: 2018-01-09 02:19:04
+tags: 
+  - CSS
+categories:
+  - 技术 
 thumbnail:
 ---
 white-space CSS 属性是用来设置如何处理元素中的空白。

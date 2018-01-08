@@ -1,7 +1,11 @@
 ---
 title: HTML知识点
 date: 2017-02-11 22:45:14
-tags: HTML
+updated: 2018-01-09 02:19:04
+tags: 
+  - HTML
+categories:
+  - 技术
 thumbnail:
 ---
 

@@ -1,7 +1,12 @@
 ---
 title: iTerm配置
 date: 2017-12-10 17:26:47
-tags: [iTerm mac]
+updated: 2018-01-09 02:19:04
+tags: 
+  - iTerm2
+  - mac
+categories:
+  - 软件
 thumbnail:
 ---
 # Mac下iTerm配置

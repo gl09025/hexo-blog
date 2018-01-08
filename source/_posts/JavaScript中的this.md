@@ -1,7 +1,11 @@
 ---
 title: JavaScript中的this
 date: 2017-05-17 23:49:12
-tags: JS
+updated: 2018-01-09 02:19:04
+tags: 
+  - JS
+categories:
+  - 技术
 thumbnail:
 ---
 

@@ -1,7 +1,11 @@
 ---
 title: setTimeout
 date: 2017-11-11 22:56:33
-tags: JS
+updated: 2018-01-09 02:19:04
+tags: 
+  - JS
+categories:
+  - 技术
 thumbnail:
 ---
 
