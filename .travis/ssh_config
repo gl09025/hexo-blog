@@ -4,9 +4,11 @@ Host github.com
   StrictHostKeyChecking no
   IdentityFile ~/.ssh/travisgithubblog
   IdentitiesOnly yes
+  StrictHostKeyChecking no
 Host coding.net
   HostName coding.net
   User git
   StrictHostKeyChecking no
   IdentityFile ~/.ssh/traviscodingbolg
   IdentitiesOnly yes
+  StrictHostKeyChecking no
