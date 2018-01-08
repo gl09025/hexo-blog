@@ -13,8 +13,8 @@ before_install:
   # Start SSH agent
   - eval $(ssh-agent)
   # Add the private key to the system
-  - ssh-add ~/.ssh/coding
-  - ssh-add ~/.ssh/githubhexoblog
+  - ssh-add ~/.ssh/traviscodingbolg
+  - ssh-add ~/.ssh/travisgithubblog
   # Copy SSH config
   - cp .travis/ssh_config ~/.ssh/config
   # Set Git config

@@ -1,10 +1,12 @@
 Host github.com
+  HostName github.com
   User git
   StrictHostKeyChecking no
-  IdentityFile ~/.ssh/githubhexoblog
+  IdentityFile ~/.ssh/travisgithubblog
   IdentitiesOnly yes
-Host coding.nte
+Host coding.net
+  HostName coding.net
   User git
   StrictHostKeyChecking no
-  IdentityFile ~/.ssh/coding
+  IdentityFile ~/.ssh/traviscodingbolg
   IdentitiesOnly yes
