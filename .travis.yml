@@ -29,7 +29,7 @@ script:
 branches:
   only:
     - blog-resource
-after_success:
+script:
     - cd ./deploy
     - git init
     - git remote add origin https://$coding_name:$coding_password@git.coding.net/gl09025/hexoblog.git
