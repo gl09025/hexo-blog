@@ -6,13 +6,15 @@ cache:
     - node_modules
 before_install:
   # Decrypt the private key
-  - openssl aes-256-cbc -K $encrypted_5bded48ce458_key -iv $encrypted_5bded48ce458_iv -in .travis/travis_sshjey.enc -out ~/.ssh/travis_sshjey -d
+  - openssl aes-256-cbc -K $encrypted_d5da0d5a1b17_key -iv $encrypted_d5da0d5a1b17_iv -in .travis/secrets.tar.enc -out ~/.ssh/secrets.tar -d
+  - tar xvf secrets.tar
   # Set the permission of the key
-  - chmod 600 ~/.ssh/travis_sshjey
+  - chmod 600 ~/.ssh/*
   # Start SSH agent
   - eval $(ssh-agent)
   # Add the private key to the system
-  - ssh-add ~/.ssh/travis_sshjey
+  - ssh-add ~/.ssh/coding
+  - ssh-add ~/.ssh/githubhexoblog
   # Copy SSH config
   - cp .travis/ssh_config ~/.ssh/config
   # Set Git config
@@ -26,12 +28,12 @@ before_install:
 script:
   - hexo generate
   - hexo deploy
-  - cd public
-  - git init
-  - git remote add origin https://$coding_name:$coding_password@git.coding.net/gl09025/hexoblog.git
-  - git add .
-  - git commit -m "update hexoblog in coding"
-  - git push -f origin master
+  # - cd public
+  # - git init
+  # - git remote add origin https://$coding_name:$coding_password@git.coding.net/gl09025/hexoblog.git
+  # - git add .
+  # - git commit -m "update hexoblog in coding"
+  # - git push -f origin master
 branches:
   only:
     - blog-resource

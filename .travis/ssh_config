@@ -1,5 +1,10 @@
 Host github.com
   User git
   StrictHostKeyChecking no
-  IdentityFile ~/.ssh/travis_sshjey
+  IdentityFile ~/.ssh/githubhexoblog
+  IdentitiesOnly yes
+Host coding.nte
+  User git
+  StrictHostKeyChecking no
+  IdentityFile ~/.ssh/coding
   IdentitiesOnly yes
