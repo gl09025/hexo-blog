@@ -78,10 +78,15 @@ theme: material
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+-type: git
   repo: git@github.com:gl09025/hexo-blog.git
   branch: master
   name: ganli
+  email: gl09025@gmail.com
+-type: git
+  repo: https://git.coding.net/gl09025/hexoblog.git
+  branch: master
+  name: andrewgl
   email: gl09025@gmail.com
 
 prism_plugin:
