@@ -7,9 +7,7 @@ cache:
 before_install:
   # Decrypt the private key
   - openssl aes-256-cbc -K $encrypted_d5da0d5a1b17_key -iv $encrypted_d5da0d5a1b17_iv -in .travis/secrets.tar.enc -out ~/.ssh/secrets.tar -d
-  - ls -la ~/.ssh
-  - ls -la ~
-  - tar xvf ~/.ssh/secrets.tar ~/.ssh
+  - tar xvf ~/.ssh/secrets.tar -C ~/.ssh
   # Set the permission of the key
   - chmod 600 ~/.ssh/*
   # Start SSH agent
