@@ -27,6 +27,7 @@ script:
   - hexo generate
   - ls -la
   - hexo deploy
+  - cd public
 branches:
   only:
     - blog-resource
