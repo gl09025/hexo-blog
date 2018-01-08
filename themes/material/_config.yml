@@ -9,7 +9,7 @@ head:
     apple_touch_icon: "/img/favicon.png"
     keywords:
     site_verification:
-        google: <meta name="google-site-verification" content="bkoJTxB885wb1fQIMSYlKVwCWTctFl44Qmv_Pro6efc" />
+        google: "<meta name="google-site-verification" content="bkoJTxB885wb1fQIMSYlKVwCWTctFl44Qmv_Pro6efc" />"
         baidu:
 
     # Enable generate structured-data as JSON+LD for SEO or not.
