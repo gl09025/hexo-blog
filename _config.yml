@@ -84,7 +84,7 @@ deploy:
   name: ganli
   email: gl09025@gmail.com
 - type: git
-  repo: https://git.coding.net/gl09025/hexoblog.git
+  repo: https://$coding_name:$coding_password@git.coding.net/gl09025/hexoblog.git
   branch: master
   name: andrewgl
   email: gl09025@gmail.com
