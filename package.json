@@ -5,6 +5,10 @@
   "hexo": {
     "version": "3.4.4"
   },
+  "scripts":{
+    "compress": "gulp",
+    "build": "hexo clean && hexo g && gulp"
+  },
   "dependencies": {
     "color-themes-for-google-code-prettify": "^2.0.4",
     "hexo": "^3.4.4",
@@ -20,5 +24,10 @@
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-htmlclean": "^2.7.16",
+    "gulp-htmlmin": "^4.0.0"
   }
 }
