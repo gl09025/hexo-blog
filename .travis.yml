@@ -25,6 +25,8 @@ before_install:
   # Clone the repository
   - git clone https://github.com/gl09025/hexo-blog.git .deploy
 
+install: 
+  - npm install
 script:
   # - hexo generate
   - npm run build
