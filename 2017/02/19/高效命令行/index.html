@@ -1,0 +1,349 @@
+<!DOCTYPE html><html style="display:none" lang="zh"><head><meta charset="utf-8"><script>window.materialVersion="1.5.2",window.oldVersion=["codestartv1","1.3.4","1.4.0","1.4.0b1","1.5.0"]</script><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn1.lncld.net"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="renderer" content="webkit"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title> 高效命令行 | GanLi&#39;s Blog</title><link rel="icon shortcut" type="image/ico" href="/img/favicon.png"><link rel="icon" href="/img/favicon.png"><meta name="format-detection" content="telephone=no"><meta name="description" itemprop="description" content="前端"><meta name="keywords" content="null,CLI"><meta name="theme-color" content="#0097A7"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><!--[if lte IE 9]><link rel="stylesheet" href="/css/ie-blocker.css"><script src="/js/ie-blocker.zhCN.js"></script><![endif]--><script>window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}},lsloader.removeLS=function(e){try{localStorage.removeItem(e)}catch(e){}},lsloader.setLS=function(e,t){try{localStorage.setItem(e,t)}catch(e){}},lsloader.getLS=function(e){var t="";try{t=localStorage.getItem(e)}catch(e){t=""}return t},versionString="/*"+(window.materialVersion||"unknownVersion")+"*/",lsloader.clean=function(){try{for(var e=[],t=0;t<localStorage.length;t++)e.push(localStorage.key(t));e.forEach(function(e){var t=lsloader.getLS(e);window.oldVersion&&window.oldVersion.reduce(function(e,n){return e||-1!==t.indexOf("/*"+n+"*/")},!1)&&lsloader.removeLS(e)})}catch(e){}},lsloader.clean(),lsloader.load=function(e,t,n,s){var a;if("boolean"==typeof n&&(s=n,n=void 0),s=s||!1,n=n||function(){},(a=this.getLS(e))&&-1===a.indexOf(versionString))return this.removeLS(e),void this.requestResource(e,t,n,s);if(a){if(a.split(versionString)[0]!=t)return console.log("reload:"+t),this.removeLS(e),void this.requestResource(e,t,n,s);a=a.split(versionString)[1],s?(this.jsRunSequence.push({name:e,code:a}),this.runjs(t,e,a)):(document.getElementById(e).appendChild(document.createTextNode(a)),n())}else this.requestResource(e,t,n,s)},lsloader.requestResource=function(e,t,n,s){var a=this;s?this.iojs(t,e,function(e,t,n){a.setLS(t,e+versionString+n),a.runjs(e,t,n)}):this.iocss(t,e,function(n){document.getElementById(e).appendChild(document.createTextNode(n)),a.setLS(e,t+versionString+n)},n)},lsloader.iojs=function(e,t,n){var s=this;s.jsRunSequence.push({name:t,code:""});try{var a=new XMLHttpRequest;a.open("get",e,!0),a.onreadystatechange=function(){if(4==a.readyState){if((a.status>=200&&a.status<300||304==a.status)&&""!=a.response)return void n(e,t,a.response);s.jsfallback(e,t)}},a.send(null)}catch(n){s.jsfallback(e,t)}},lsloader.iocss=function(e,t,n,s){var a=this;try{var o=new XMLHttpRequest;o.open("get",e,!0),o.onreadystatechange=function(){if(4==o.readyState){if((o.status>=200&&o.status<300||304==o.status)&&""!=o.response)return n(o.response),void s();a.cssfallback(e,t,s)}},o.send(null)}catch(n){a.cssfallback(e,t,s)}},lsloader.iofonts=function(e,t,n,s){var a=this;try{var o=new XMLHttpRequest;o.open("get",e,!0),o.onreadystatechange=function(){if(4==o.readyState){if((o.status>=200&&o.status<300||304==o.status)&&""!=o.response)return n(o.response),void s();a.cssfallback(e,t,s)}},o.send(null)}catch(n){a.cssfallback(e,t,s)}},lsloader.runjs=function(e,t,n){if(t&&n)for(var s in this.jsRunSequence)this.jsRunSequence[s].name==t&&(this.jsRunSequence[s].code=n);if(this.jsRunSequence[0]&&this.jsRunSequence[0].code&&"failed"!=this.jsRunSequence[0].status)(a=document.createElement("script")).appendChild(document.createTextNode(this.jsRunSequence[0].code)),a.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(a),this.jsRunSequence.shift(),this.jsRunSequence.length>0&&this.runjs();else if(this.jsRunSequence[0]&&"failed"==this.jsRunSequence[0].status){var a,o=this;(a=document.createElement("script")).src=this.jsRunSequence[0].path,a.type="text/javascript",this.jsRunSequence[0].status="loading",a.onload=function(){o.jsRunSequence.shift(),o.jsRunSequence.length>0&&o.runjs()},document.body.appendChild(a)}},lsloader.tagLoad=function(e,t){this.jsRunSequence.push({name:t,code:"",path:e,status:"failed"}),this.runjs()},lsloader.jsfallback=function(e,t){if(!this.jsnamemap[t]){this.jsnamemap[t]=t;for(var n in this.jsRunSequence)this.jsRunSequence[n].name==t&&(this.jsRunSequence[n].code="",this.jsRunSequence[n].status="failed",this.jsRunSequence[n].path=e);this.runjs()}},lsloader.cssfallback=function(e,t,n){if(!this.cssnamemap[t]){this.cssnamemap[t]=1;var s=document.createElement("link");s.type="text/css",s.href=e,s.rel="stylesheet",s.onload=s.onerror=n;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(s,a)}},lsloader.runInlineScript=function(e,t){var n=document.getElementById(t).innerText;this.jsRunSequence.push({name:e,code:n}),this.runjs()}</script><script>function Queue(){this.dataStore=[],this.offer=function(e){this.debug&&console.log("Offered a Queued Function.");"function"==typeof e?this.dataStore.push(e):console.log("You must offer a function.")},this.poll=function(){this.debug&&console.log("Polled a Queued Function.");return this.dataStore.shift()},this.execNext=function(){var e=this.poll();void 0!==e&&(this.debug&&console.log("Run a Queued Function."),e())},this.debug=!1,this.startDebug=function(){this.debug=!0}}var queue=new Queue</script><style id="material_css"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style id="style_css"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style id="prettify_css"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style id="prettify_theme"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style>body,html{font-family:Roboto,"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;overflow-x:hidden!important}code{font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace}a{color:#00838f}#scheme-Paradox .hot_tags-count,#scheme-Paradox .sidebar-colored .sidebar-badge,#scheme-Paradox .sidebar-colored .sidebar-header,#scheme-Paradox .sidebar_archives-count,#search-form-label:after,#search-label,.mdl-card__media{background-color:#0097a7!important}#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus,#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover{color:#0097a7!important}#ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a,#post_entry-right-info,.sidebar-colored .sidebar-nav li:hover>a,.sidebar-colored .sidebar-nav li:hover>a i,.sidebar-colored .sidebar-nav li>a:focus i,.sidebar-colored .sidebar-nav li>a:hover,.sidebar-colored .sidebar-nav li>a:hover i,.sidebar-colored .sidebar-nav>.open>a,.sidebar-colored .sidebar-nav>.open>a:focus,.sidebar-colored .sidebar-nav>.open>a:hover{color:#0097a7!important}.toTop{background:#757575!important}.material-layout .material-index>.material-nav,.material-layout .material-post>.material-nav,.material-nav a{color:#757575}#scheme-Paradox .MD-burger-layer{background-color:#757575}#scheme-Paradox #post-toc-trigger-btn{color:#757575}.post-toc a:hover{color:#00838f;text-decoration:underline}</style><style>body{background-color:#f5f5f5}#scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{background-color:#fff}</style><style>.fade{transition:all .8s linear;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);opacity:1}.fade.out{opacity:0}</style><link href="https://fonts.proxy.ustclug.org/css?family=Roboto:300,400,500" rel="stylesheet"><style id="material_icons"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==",!0)</script><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="GanLi&#39;s Blog"><meta name="msapplication-starturl" content="https://gl09025.github.io/hexo-blog/2017/02/19/高效命令行/"><meta name="msapplication-navbutton-color" content="#0097A7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="GanLi&#39;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="apple-touch-icon" href="/img/favicon.png"><meta name="google-site-verification" content="bkoJTxB885wb1fQIMSYlKVwCWTctFl44Qmv_Pro6efc"><meta property="og:url" content="https://gl09025.github.io/hexo-blog/2017/02/19/高效命令行/"><meta property="og:type" content="blog"><meta property="og:title" content="高效命令行 | GanLi&#39;s Blog"><meta property="og:image" content="/img/favicon.png"><meta property="og:description" content="前端"><meta property="og:article:tag" content="CLI"><meta property="article:published_time" content="Sun Feb 19 2017 16:43:03 GMT+0000"><meta property="article:modified_time" content="Tue Jan 09 2018 02:19:04 GMT+0000"><meta name="twitter:card" content="summary_large_image"><link rel="canonical" href="https://gl09025.github.io/hexo-blog/2017/02/19/高效命令行/index.html"><script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://gl09025.github.io/hexo-blog/2017/02/19/高效命令行/index.html",
+    "headline": "高效命令行",
+    "datePublished": "Sun Feb 19 2017 16:43:03 GMT+0000",
+    "dateModified": "Tue Jan 09 2018 02:19:04 GMT+0000",
+    "author": {
+        "@type": "Person",
+        "name": "GanLi",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "一场修行"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "GanLi&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",CLInull",
+    "description": "前端",
+}
+</script><link rel="stylesheet" href="/css/prism.css" type="text/css"></head><body id="scheme-Paradox" class="lazy"><div class="material-layout mdl-js-layout has-drawer is-upgraded"><main class="material-layout__content" id="main"><div id="top"></div> <button class="MD-burger-icon sidebar-toggle"><span class="MD-burger-layer"></span></button> <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon"> <i class="material-icons">format_list_numbered</i></button><ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh;overflow-y:scroll"><ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基本概念"><span class="post-toc-number">1.</span> <span class="post-toc-text">基本概念</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#图形界面和命令行的简单区别"><span class="post-toc-number">2.</span> <span class="post-toc-text">图形界面和命令行的简单区别</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#命令行"><span class="post-toc-number">3.</span> <span class="post-toc-text">命令行</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#学习命令行"><span class="post-toc-number">4.</span> <span class="post-toc-text">学习命令行</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#VIM官方小结"><span class="post-toc-number">5.</span> <span class="post-toc-text">VIM官方小结</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#环境变量设置"><span class="post-toc-number">6.</span> <span class="post-toc-text">环境变量设置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#z"><span class="post-toc-number">7.</span> <span class="post-toc-text">z</span></a></li></ol></ul><div class="material-post_container"><div class="material-post mdl-grid"><div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col"><div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50"><script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script><p class="article-headline-p"> 高效命令行</p></div><div class="mdl-color-text--grey-700 mdl-card__supporting-text meta"><div id="author-avatar"> <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"></div><div> <strong>GanLi</strong> <span>2月 19, 2017</span></div><div class="section-spacer"></div> <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">devices other</i> <span class="visuallyhidden">devices other</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button"><li class="mdl-menu__item">在其它设备中阅读本文章</li> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC5ElEQVR42u3aQW7jMBAEQP//07vXHFZyN0fY2GTpFCQWw2KADKY5rz9HPi9sbGxsbGxsbGzsj2S/4ufn5+/f/cevvF3t6t3k+8mesbGxsU9gv/nXH2OSw0rA9/i1PWNjY2OfwG43/dQB3Zerq33We8bGxsbGjtuP5N2kRN2vg42NjY09YbebTgphGzZhY2NjY68FNG1kPwmSkgP6T1kaNjY29sezJxe9v/X1L99vY2NjY38Mu33yFqUd1mlXrneOjY2NvSk7v1idDFnmDcZ8PGjUgWFjY2N/ObvdaF6o2k/mZa8YG8LGxsY+gN0WsHZMs/1k3uokTQs2Njb2Oew2oL8qTvn376ntkNBiAcPGxsb+Wna+XNuutE/b6rSxFzY2Nvbe7Dymz68B8lKUHF/7p4oKGDY2Nvam7LWGZK3UtRcPeZnExsbGPoe9NmTTDtA8FSTlpSsa2cHGxsbegv0spg331wKmfMQHGxsb+wT2/dJrjURCfeqtPITCxsbG3pU9CdzbWH9t1KaNny7fwsbGxt6UnQzBTIKhychOfuXw2PUANjY29tey29i9jZ/ao5nEVUUBw8bGxt6CXZeBwcjOWsSfl7c3vwsbGxt7U3ZSDNZ++lgLMWhssLGxsU9g58Xg2QuDvP3IY683a2JjY2NvzV4bkZkfXL71/IAujx4bGxt7U3bSAKxd8a4Vs3yUpw2YsLGxsXdltyFOW2bWSloeZo1uRbCxsbG3Yz91yZoM0+QHlMRP2NjY2Cez83LVXhu0JXBy3RvtExsbG3tTdvu0hWfSVLTR0pv9YGNjY2/KbscZk6Zijdo2QtjY2NjYeSiTXwYnrUV+xHmAFZU6bGxs7APYSdFqG4Y29G8jqgeGL7GxsbEPY+elpQ2A2ianXg0bGxsbuyxa7Qpr4VTeVmFjY2OfwG5Dpck17VqxHF08Y2NjY2/NnoQ1k/AoifUnFw/Y2NjYJ7DPebCxsbGxsbGxsbE/5vkLZ6Hsb+pQKzgAAAAASUVORK5CYII="></ul> <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">bookmark</i> <span class="visuallyhidden">bookmark</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button"><li class="mdl-menu__item"> <a class="post_tag-link" href="/tags/CLI/">CLI</a></li></ul> <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">share</i> <span class="visuallyhidden">share</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button"><a class="post_share-link" href="#"><li class="mdl-menu__item"> <span id="/2017/02/19/高效命令行/" class="leancloud-views_num" data-flag-title="高效命令行">&nbsp;浏览量</span></li></a><a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=高效命令行&url=https://gl09025.github.io/hexo-blog/2017/02/19/高效命令行/index.html&pic=https://gl09025.github.io/hexo-blog/img/favicon.png&searchPic=false&style=simple" target="_blank"><li class="mdl-menu__item"> 分享到微博</li></a><a class="post_share-link" href="https://twitter.com/intent/tweet?text=高效命令行&url=https://gl09025.github.io/hexo-blog/2017/02/19/高效命令行/index.html&via=GanLi" target="_blank"><li class="mdl-menu__item"> 分享到 Twitter</li></a><a class="post_share-link" href="https://plus.google.com/share?url=https://gl09025.github.io/hexo-blog/2017/02/19/高效命令行/index.html" target="_blank"><li class="mdl-menu__item"> 分享到 Google+</li></a></ul></div><div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out"><p>学习命令行不要怕，就像学游泳，要先下水，刚开始保证自己不被淹死，到后面你就会越来越熟练了。</p><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ol><li>文件</li><li>目录</li><li>节点</li><li>路径<ul><li>相对路径</li><li>绝对路径</li></ul></li></ol><h2 id="图形界面和命令行的简单区别"><a href="#图形界面和命令行的简单区别" class="headerlink" title="图形界面和命令行的简单区别"></a>图形界面和命令行的简单区别</h2><table><thead><tr><th style="text-align:center"></th><th style="text-align:center">输入</th><th style="text-align:center">输出</th></tr></thead><tbody><tr><td style="text-align:center">图形界面</td><td style="text-align:center">鼠标点击</td><td style="text-align:center">弹出对话框</td></tr><tr><td style="text-align:center">命令行</td><td style="text-align:center">键入文字</td><td style="text-align:center">显示文字</td></tr></tbody></table><h2 id="命令行"><a href="#命令行" class="headerlink" title="命令行"></a>命令行</h2><p>命令 -选项 参数<br>如<code>cp -r a b</code></p><p>最基本的命令：</p><pre><code>mkdir：创建目录
+rm ：删除
+mv：移动，改名
+cp:拷贝
+ls:列出
+ln:链接
+pwd:所在路径
+~:用户家目录
+echo:常用echo &quot;example&quot; &gt; example.txt或者追加echo &quot;example&quot; &gt;&gt; example.txt
+</code></pre><h2 id="学习命令行"><a href="#学习命令行" class="headerlink" title="学习命令行"></a>学习命令行</h2><p>自查帮助手册</p><ol><li>man cd</li><li>cd -h</li><li>cd –help</li><li><a href="http://explainshell.com/" target="_blank" rel="noopener">explainshell</a></li></ol><h2 id="VIM官方小结"><a href="#VIM官方小结" class="headerlink" title="VIM官方小结"></a>VIM官方小结</h2><p>这里将vimtutor的总结拿出来</p><pre><code>                               第一讲小结
+
+
+  1. 光标在屏幕文本中的移动既可以用箭头键，也可以使用 hjkl 字母键。
+         h (左移)       j (下行)       k (上行)     l (右移)
+
+  2. 欲进入 Vim 编辑器(从命令行提示符)，请输入：vim 文件名 &lt;回车&gt;
+
+  3. 欲退出 Vim 编辑器，请输入 &lt;ESC&gt;   :q!   &lt;回车&gt; 放弃所有改动。
+                      或者输入 &lt;ESC&gt;   :wq   &lt;回车&gt; 保存改动。
+
+  4. 在正常模式下删除光标所在位置的字符，请按： x
+
+  5. 欲插入或添加文本，请输入：
+
+         i   输入欲插入文本   &lt;ESC&gt;             在光标前插入文本
+         A   输入欲添加文本   &lt;ESC&gt;             在一行后添加文本
+
+特别提示：按下 &lt;ESC&gt; 键会带您回到正常模式或者撤消一个不想输入或部分完整
+的命令。
+
+好了，第一讲到此结束。下面接下来继续第二讲的内容。
+</code></pre><pre><code>                               第二讲小结
+
+
+  1. 欲从当前光标删除至下一个单词，请输入：dw
+  2. 欲从当前光标删除至当前行末尾，请输入：d$
+  3. 欲删除整行，请输入：dd
+
+  4. 欲重复一个动作，请在它前面加上一个数字：2w
+  5. 在正常模式下修改命令的格式是：
+               operator   [number]   motion
+     其中：
+       operator - 操作符，代表要做的事情，比如 d 代表删除
+       [number] - 可以附加的数字，代表动作重复的次数
+       motion   - 动作，代表在所操作的文本上的移动，例如 w 代表单词(word)，
+                  $ 代表行末等等。
+
+  6. 欲移动光标到行首，请按数字0键：0
+
+  7. 欲撤消以前的操作，请输入：u (小写的u)
+     欲撤消在一行中所做的改动，请输入：U (大写的U)
+     欲撤消以前的撤消命令，恢复以前的操作结果，请输入：CTRL-R
+</code></pre><pre><code>                                  第三讲小结
+
+
+  1. 要重新置入已经删除的文本内容，请按小写字母 p 键。该操作可以将已删除
+     的文本内容置于光标之后。如果最后一次删除的是一个整行，那么该行将置
+     于当前光标所在行的下一行。
+
+  2. 要替换光标所在位置的字符，请输入小写的 r 和要替换掉原位置字符的新字
+     符即可。
+
+  3. 更改类命令允许您改变从当前光标所在位置直到动作指示的位置中间的文本。
+     比如输入 ce 可以替换当前光标到单词的末尾的内容；输入 c$ 可以替换当
+     前光标到行末的内容。
+
+  4. 更改类命令的格式是：
+
+         c   [number]   motion
+
+现在我们继续学习下一讲。
+</code></pre><pre><code>                               第四讲小结
+
+
+  1. CTRL-G 用于显示当前光标所在位置和文件状态信息。
+     G 用于将光标跳转至文件最后一行。
+     先敲入一个行号然后输入大写 G 则是将光标移动至该行号代表的行。
+     gg 用于将光标跳转至文件第一行。
+
+  2. 输入 / 然后紧随一个字符串是在当前所编辑的文档中正向查找该字符串。
+     输入 ? 然后紧随一个字符串则是在当前所编辑的文档中反向查找该字符串。
+     完成一次查找之后按 n 键是重复上一次的命令，可在同一方向上查
+     找下一个匹配字符串所在；或者按大写 N 向相反方向查找下一匹配字符串所在。
+     CTRL-O 带您跳转回较旧的位置，CTRL-I 则带您到较新的位置。
+
+  3. 如果光标当前位置是括号(、)、[、]、{、}，按 % 会将光标移动到配对的括号上。
+
+  4. 在一行内替换头一个字符串 old 为新的字符串 new，请输入  :s/old/new
+     在一行内替换所有的字符串 old 为新的字符串 new，请输入  :s/old/new/g
+     在两行内替换所有的字符串 old 为新的字符串 new，请输入  :#,#s/old/new/g
+     在文件内替换所有的字符串 old 为新的字符串 new，请输入  :%s/old/new/g
+     进行全文替换时询问用户确认每个替换需添加 c 标志        :%s/old/new/gc
+</code></pre><pre><code>                               第五讲小结
+
+
+  1. :!command 用于执行一个外部命令 command。
+
+     请看一些实际例子：
+         (MS-DOS)         (Unix)
+          :!dir            :!ls            -  用于显示当前目录的内容。
+          :!del FILENAME   :!rm FILENAME   -  用于删除名为 FILENAME 的文件。
+
+  2. :w FILENAME  可将当前 VIM 中正在编辑的文件保存到名为 FILENAME 的文
+     件中。
+
+  3. v motion :w FILENAME 可将当前编辑文件中可视模式下选中的内容保存到文件
+     FILENAME 中。
+
+  4. :r FILENAME 可提取磁盘文件 FILENAME 并将其插入到当前文件的光标位置
+     后面。
+
+  5. :r !dir 可以读取 dir 命令的输出并将其放置到当前文件的光标位置后面。
+</code></pre><pre><code>                               第六讲小结
+
+  1. 输入小写的 o 可以在光标下方打开新的一行并进入插入模式。
+     输入大写的 O 可以在光标上方打开新的一行。
+
+  2. 输入小写的 a 可以在光标所在位置之后插入文本。
+     输入大写的 A 可以在光标所在行的行末之后插入文本。
+
+  3. e 命令可以使光标移动到单词末尾。
+
+  4. 操作符 y 复制文本，p 粘贴先前复制的文本。
+
+  5. 输入大写的 R 将进入替换模式，直至按 &lt;ESC&gt; 键回到正常模式。
+
+  6. 输入 :set xxx 可以设置 xxx 选项。一些有用的选项如下：
+        &#39;ic&#39; &#39;ignorecase&#39;       查找时忽略字母大小写
+        &#39;is&#39; &#39;incsearch&#39;        查找短语时显示部分匹配
+        &#39;hls&#39; &#39;hlsearch&#39;        高亮显示所有的匹配短语
+     选项名可以用完整版本，也可以用缩略版本。
+
+  7. 在选项前加上 no 可以关闭选项：  :set noic
+</code></pre><pre><code>                                  第七讲小结
+
+
+  1. 输入 :help 或者按 &lt;F1&gt; 键或 &lt;Help&gt; 键可以打开帮助窗口。
+
+  2. 输入 :help cmd 可以找到关于 cmd 命令的帮助。
+
+  3. 输入 CTRL-W CTRL-W  可以使您在窗口之间跳转。
+
+  4. 输入 :q 以关闭帮助窗口
+
+  5. 您可以创建一个 vimrc 启动脚本文件用来保存您偏好的设置。
+
+  6. 当输入 : 命令时，按 CTRL-D 可以查看可能的补全结果。
+     按 &lt;TAB&gt; 可以使用一个补全。
+</code></pre><h2 id="环境变量设置"><a href="#环境变量设置" class="headerlink" title="环境变量设置"></a>环境变量设置</h2><p>典型的<code>~/.bashrc</code><br>常用的是我们可以在里面使用 <code>alias</code> 重命名命令，比如我们要查找根目录的普通文件</p><pre class="language-bash"><code class="language-bash"><span class="token function">find</span> / -type f -name <span class="token string">"example.txt"</span>
+</code></pre><p>可以在bashrc中这么写</p><pre class="language-bash"><code class="language-bash"><span class="token function">alias</span> fd <span class="token operator">=</span> <span class="token variable"><span class="token variable">`</span><span class="token function">find</span> / -type f -name $1<span class="token variable">`</span></span>
+</code></pre><p>重启终端或者在终端中<code>source ~/.bashrc</code> 生效。<br>我们执行<code>fd example.txt</code> 就相当于上面的一长串了。<br>也可以在里面写一个简单的函数</p><pre class="language-bash"><code class="language-bash">fd <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  local d
+  d <span class="token operator">=</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">find</span> <span class="token keyword">.</span> -type d -name $1<span class="token variable">)</span></span>
+  <span class="token function">cd</span> <span class="token string">"<span class="token variable">$d</span>"</span>
+<span class="token punctuation">}</span>
+</code></pre><p>上面这个函数的作用就是找到目录并进入，这个写的比较简单，这里只是举个栗子。</p><h2 id="z"><a href="#z" class="headerlink" title="z"></a>z</h2><p><a href="https://github.com/rupa/z" target="_blank" rel="noopener">点我查看官方github</a><br>官方简介</p><pre><code>DESCRIPTION
+       Tracks your most used directories, based on &#39;frecency&#39;.
+
+       After  a  short  learning  phase, z will take you to the most &#39;frecent&#39;
+       directory that matches ALL of the regexes given on the command line, in
+       order.
+
+       For example, z foo bar would match /foo/bar but not /bar/foo.
+</code></pre><p>简单的理解就是能够进入最常用的目录，不需要再去寻找。</p></div><div id="disqus-comment"><div id="disqus_thread"></div><style>.disqus_click_btn{line-height:30px;margin:0;min-width:50px;padding:0 14px;display:inline-block;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;text-transform:uppercase;letter-spacing:0;overflow:hidden;will-change:box-shadow;transition:box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);outline:0;cursor:pointer;text-decoration:none;text-align:center;vertical-align:middle;border:0;background:rgba(158,158,158,.2);box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);color:#fff;background-color:#757575;text-shadow:0;display:none}</style><div class="btn_click_load"> <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config=function(){this.page.url="https://gl09025.github.io/hexo-blog/2017/02/19/高效命令行/",this.page.identifier="https://gl09025.github.io/hexo-blog/2017/02/19/高效命令行/"}</script><script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 4000,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//ganliblog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//ganliblog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script></div><style>#disqus-comment{background-color:#eee;padding:2pc}</style></div><nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col"> <a href="/2017/02/19/WSL/" id="post_nav-newer" class="prev-content"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation"> <i class="material-icons">arrow_back</i></button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新篇</a><div class="section-spacer"></div> <a href="/2017/02/12/HTML-Form知识点小结/" id="post_nav-older" class="next-content">旧篇 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation"> <i class="material-icons">arrow_forward</i></button></a></nav></div></div><div class="sidebar-overlay"></div><aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation"><div id="sidebar-main"><div class="sidebar-header header-cover" style="background-image:url(/img/sidebar_header.png)"><div class="top-bar"></div> <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display:initial" data-upgraded=",MaterialButton,MaterialRipple"> <i class="material-icons">clear_all</i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button><div class="sidebar-image"> <img src="/img/avatar.png" alt="GanLi's avatar"></div> <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">gl09025@gmail.com<b class="caret"></b></a></div><ul class="nav sidebar-nav"><li class="dropdown"><ul id="settings-dropdown" class="dropdown-menu"><li> <a href="mailto:gl09025@gmail.com" target="_blank" title="Email Me"><i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i> Email Me</a></li></ul></li><li id="sidebar-first-li"> <a href="/"><i class="material-icons sidebar-material-icons">home</i> 主页</a></li><li class="dropdown"> <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown"><i class="material-icons sidebar-material-icons">chrome_reader_mode</i> 分类<b class="caret"></b></a><ul class="dropdown-menu"><li> <a class="sidebar_archives-link" href="/categories/技术/">技术<span class="sidebar_archives-count">29</span></a></li><li><a class="sidebar_archives-link" href="/categories/数学/">数学<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/科学上网/">科学上网<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件/">软件<span class="sidebar_archives-count">3</span></a></li></ul></li><li> <a href="/timeline.html" title="归档"><i class="material-icons sidebar-material-icons">inbox</i> 归档</a></li><li> <a href="/tags.html" title="标签云"><i class="material-icons sidebar-material-icons">cloud</i> 标签云</a></li><li class="divider"></li><li> <a href="/archives">文章总数 <span class="sidebar-badge">35</span></a></li><li class="divider"></li></ul></div></aside><div id="back-to-top" class="toTop-wrap"> <a href="#top" class="toTop"><i class="material-icons footer_top-i">expand_less</i></a></div><footer class="mdl-mini-footer" id="bottom"><div class="mdl-mini-footer--left-section sns-list"> <a href="https://github.com/gl09025" target="_blank"><button class="mdl-mini-footer--social-btn social-btn footer-sns-github"> <span class="visuallyhidden">Github</span></button></a></div><div id="copyright"> Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd=new Date;document.write("&nbsp;"+fd.getFullYear()+"&nbsp;")</script>GanLi's Blog<br><p>Hosted by <a href="https://pages.coding.me" style="font-weight:700">Coding Pages</a></p></div><div class="mdl-mini-footer--right-section"><div><div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div><div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div></div></div></footer><script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==",!0)</script><script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==",!0)</script><script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==",!0)</script><script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script><script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script><script>AV.initialize("zrrnQyxTXBy3gPT2gXjAEYxf-gzGzoHsz","sj1mlgeMLkhsi3nUd6JYs1zi")</script><script type="text/ls-javascript" id="leancloud-views-script">
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script><script>var agent=navigator.userAgent.toLowerCase();agent.indexOf("ucbrowser")>0&&(document.write('<link rel="stylesheet" href="/css/uc.css">'),alert("由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。"))</script><script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==",!0)</script><script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script><script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script><script>!function(){for(var e=document.querySelectorAll('script[type="text/ls-javascript"]'),r=0;r<e.length;++r){var o=e[r];lsloader.runInlineScript(o.id,o.id)}}(),console.log("\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n","color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;","color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;")</script></main></div></body></html>

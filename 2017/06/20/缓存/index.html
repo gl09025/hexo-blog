@@ -1,0 +1,190 @@
+<!DOCTYPE html><html style="display:none" lang="zh"><head><meta charset="utf-8"><script>window.materialVersion="1.5.2",window.oldVersion=["codestartv1","1.3.4","1.4.0","1.4.0b1","1.5.0"]</script><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn1.lncld.net"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="renderer" content="webkit"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title> 缓存 | GanLi&#39;s Blog</title><link rel="icon shortcut" type="image/ico" href="/img/favicon.png"><link rel="icon" href="/img/favicon.png"><meta name="format-detection" content="telephone=no"><meta name="description" itemprop="description" content="前端"><meta name="keywords" content="null,HTTP"><meta name="theme-color" content="#0097A7"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><!--[if lte IE 9]><link rel="stylesheet" href="/css/ie-blocker.css"><script src="/js/ie-blocker.zhCN.js"></script><![endif]--><script>window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}},lsloader.removeLS=function(e){try{localStorage.removeItem(e)}catch(e){}},lsloader.setLS=function(e,t){try{localStorage.setItem(e,t)}catch(e){}},lsloader.getLS=function(e){var t="";try{t=localStorage.getItem(e)}catch(e){t=""}return t},versionString="/*"+(window.materialVersion||"unknownVersion")+"*/",lsloader.clean=function(){try{for(var e=[],t=0;t<localStorage.length;t++)e.push(localStorage.key(t));e.forEach(function(e){var t=lsloader.getLS(e);window.oldVersion&&window.oldVersion.reduce(function(e,n){return e||-1!==t.indexOf("/*"+n+"*/")},!1)&&lsloader.removeLS(e)})}catch(e){}},lsloader.clean(),lsloader.load=function(e,t,n,s){var a;if("boolean"==typeof n&&(s=n,n=void 0),s=s||!1,n=n||function(){},(a=this.getLS(e))&&-1===a.indexOf(versionString))return this.removeLS(e),void this.requestResource(e,t,n,s);if(a){if(a.split(versionString)[0]!=t)return console.log("reload:"+t),this.removeLS(e),void this.requestResource(e,t,n,s);a=a.split(versionString)[1],s?(this.jsRunSequence.push({name:e,code:a}),this.runjs(t,e,a)):(document.getElementById(e).appendChild(document.createTextNode(a)),n())}else this.requestResource(e,t,n,s)},lsloader.requestResource=function(e,t,n,s){var a=this;s?this.iojs(t,e,function(e,t,n){a.setLS(t,e+versionString+n),a.runjs(e,t,n)}):this.iocss(t,e,function(n){document.getElementById(e).appendChild(document.createTextNode(n)),a.setLS(e,t+versionString+n)},n)},lsloader.iojs=function(e,t,n){var s=this;s.jsRunSequence.push({name:t,code:""});try{var a=new XMLHttpRequest;a.open("get",e,!0),a.onreadystatechange=function(){if(4==a.readyState){if((a.status>=200&&a.status<300||304==a.status)&&""!=a.response)return void n(e,t,a.response);s.jsfallback(e,t)}},a.send(null)}catch(n){s.jsfallback(e,t)}},lsloader.iocss=function(e,t,n,s){var a=this;try{var o=new XMLHttpRequest;o.open("get",e,!0),o.onreadystatechange=function(){if(4==o.readyState){if((o.status>=200&&o.status<300||304==o.status)&&""!=o.response)return n(o.response),void s();a.cssfallback(e,t,s)}},o.send(null)}catch(n){a.cssfallback(e,t,s)}},lsloader.iofonts=function(e,t,n,s){var a=this;try{var o=new XMLHttpRequest;o.open("get",e,!0),o.onreadystatechange=function(){if(4==o.readyState){if((o.status>=200&&o.status<300||304==o.status)&&""!=o.response)return n(o.response),void s();a.cssfallback(e,t,s)}},o.send(null)}catch(n){a.cssfallback(e,t,s)}},lsloader.runjs=function(e,t,n){if(t&&n)for(var s in this.jsRunSequence)this.jsRunSequence[s].name==t&&(this.jsRunSequence[s].code=n);if(this.jsRunSequence[0]&&this.jsRunSequence[0].code&&"failed"!=this.jsRunSequence[0].status)(a=document.createElement("script")).appendChild(document.createTextNode(this.jsRunSequence[0].code)),a.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(a),this.jsRunSequence.shift(),this.jsRunSequence.length>0&&this.runjs();else if(this.jsRunSequence[0]&&"failed"==this.jsRunSequence[0].status){var a,o=this;(a=document.createElement("script")).src=this.jsRunSequence[0].path,a.type="text/javascript",this.jsRunSequence[0].status="loading",a.onload=function(){o.jsRunSequence.shift(),o.jsRunSequence.length>0&&o.runjs()},document.body.appendChild(a)}},lsloader.tagLoad=function(e,t){this.jsRunSequence.push({name:t,code:"",path:e,status:"failed"}),this.runjs()},lsloader.jsfallback=function(e,t){if(!this.jsnamemap[t]){this.jsnamemap[t]=t;for(var n in this.jsRunSequence)this.jsRunSequence[n].name==t&&(this.jsRunSequence[n].code="",this.jsRunSequence[n].status="failed",this.jsRunSequence[n].path=e);this.runjs()}},lsloader.cssfallback=function(e,t,n){if(!this.cssnamemap[t]){this.cssnamemap[t]=1;var s=document.createElement("link");s.type="text/css",s.href=e,s.rel="stylesheet",s.onload=s.onerror=n;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(s,a)}},lsloader.runInlineScript=function(e,t){var n=document.getElementById(t).innerText;this.jsRunSequence.push({name:e,code:n}),this.runjs()}</script><script>function Queue(){this.dataStore=[],this.offer=function(e){this.debug&&console.log("Offered a Queued Function.");"function"==typeof e?this.dataStore.push(e):console.log("You must offer a function.")},this.poll=function(){this.debug&&console.log("Polled a Queued Function.");return this.dataStore.shift()},this.execNext=function(){var e=this.poll();void 0!==e&&(this.debug&&console.log("Run a Queued Function."),e())},this.debug=!1,this.startDebug=function(){this.debug=!0}}var queue=new Queue</script><style id="material_css"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style id="style_css"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style id="prettify_css"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style id="prettify_theme"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style>body,html{font-family:Roboto,"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;overflow-x:hidden!important}code{font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace}a{color:#00838f}#scheme-Paradox .hot_tags-count,#scheme-Paradox .sidebar-colored .sidebar-badge,#scheme-Paradox .sidebar-colored .sidebar-header,#scheme-Paradox .sidebar_archives-count,#search-form-label:after,#search-label,.mdl-card__media{background-color:#0097a7!important}#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus,#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover{color:#0097a7!important}#ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a,#post_entry-right-info,.sidebar-colored .sidebar-nav li:hover>a,.sidebar-colored .sidebar-nav li:hover>a i,.sidebar-colored .sidebar-nav li>a:focus i,.sidebar-colored .sidebar-nav li>a:hover,.sidebar-colored .sidebar-nav li>a:hover i,.sidebar-colored .sidebar-nav>.open>a,.sidebar-colored .sidebar-nav>.open>a:focus,.sidebar-colored .sidebar-nav>.open>a:hover{color:#0097a7!important}.toTop{background:#757575!important}.material-layout .material-index>.material-nav,.material-layout .material-post>.material-nav,.material-nav a{color:#757575}#scheme-Paradox .MD-burger-layer{background-color:#757575}#scheme-Paradox #post-toc-trigger-btn{color:#757575}.post-toc a:hover{color:#00838f;text-decoration:underline}</style><style>body{background-color:#f5f5f5}#scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{background-color:#fff}</style><style>.fade{transition:all .8s linear;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);opacity:1}.fade.out{opacity:0}</style><link href="https://fonts.proxy.ustclug.org/css?family=Roboto:300,400,500" rel="stylesheet"><style id="material_icons"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==",!0)</script><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="GanLi&#39;s Blog"><meta name="msapplication-starturl" content="https://gl09025.github.io/hexo-blog/2017/06/20/缓存/"><meta name="msapplication-navbutton-color" content="#0097A7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="GanLi&#39;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="apple-touch-icon" href="/img/favicon.png"><meta name="google-site-verification" content="bkoJTxB885wb1fQIMSYlKVwCWTctFl44Qmv_Pro6efc"><meta property="og:url" content="https://gl09025.github.io/hexo-blog/2017/06/20/缓存/"><meta property="og:type" content="blog"><meta property="og:title" content="缓存 | GanLi&#39;s Blog"><meta property="og:image" content="/img/favicon.png"><meta property="og:description" content="前端"><meta property="og:article:tag" content="HTTP"><meta property="article:published_time" content="Tue Jun 20 2017 20:36:30 GMT+0000"><meta property="article:modified_time" content="Tue Jan 09 2018 02:19:04 GMT+0000"><meta name="twitter:card" content="summary_large_image"><link rel="canonical" href="https://gl09025.github.io/hexo-blog/2017/06/20/缓存/index.html"><script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://gl09025.github.io/hexo-blog/2017/06/20/缓存/index.html",
+    "headline": "缓存",
+    "datePublished": "Tue Jun 20 2017 20:36:30 GMT+0000",
+    "dateModified": "Tue Jan 09 2018 02:19:04 GMT+0000",
+    "author": {
+        "@type": "Person",
+        "name": "GanLi",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "一场修行"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "GanLi&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",HTTPnull",
+    "description": "前端",
+}
+</script><link rel="stylesheet" href="/css/prism.css" type="text/css"></head><body id="scheme-Paradox" class="lazy"><div class="material-layout mdl-js-layout has-drawer is-upgraded"><main class="material-layout__content" id="main"><div id="top"></div> <button class="MD-burger-icon sidebar-toggle"><span class="MD-burger-layer"></span></button> <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon"> <i class="material-icons">format_list_numbered</i></button><ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh;overflow-y:scroll"><ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前因"><span class="post-toc-number">1.</span> <span class="post-toc-text">前因</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#什么是缓存"><span class="post-toc-number">2.</span> <span class="post-toc-text">什么是缓存</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#缓存机制"><span class="post-toc-number">3.</span> <span class="post-toc-text">缓存机制</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HTTP协议中与缓存相关的首部字段"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">HTTP协议中与缓存相关的首部字段</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#使用Cache-Control"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">使用Cache-Control</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#缓存校验字段"><span class="post-toc-number">3.2.1.</span> <span class="post-toc-text">缓存校验字段</span></a></li></ol></li></ol></li></ol></ul><div class="material-post_container"><div class="material-post mdl-grid"><div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col"><div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50"><script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script><p class="article-headline-p"> 缓存</p></div><div class="mdl-color-text--grey-700 mdl-card__supporting-text meta"><div id="author-avatar"> <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"></div><div> <strong>GanLi</strong> <span>6月 20, 2017</span></div><div class="section-spacer"></div> <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">devices other</i> <span class="visuallyhidden">devices other</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button"><li class="mdl-menu__item">在其它设备中阅读本文章</li> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAACy0lEQVR42u3aMXYbMQwEUN3/0k6bxpsZgnYk8rPys1crfjZjAHx9Xble2NjY2NjY2NjY2G/JfsXru089v+fvvxZbfHzD4p6xsbGxj2Ynm0gO63mL372zZSzuGRsbG/sCds5IYizZ4nPkrIUZNjY2NvauMiAh5UXRZM/Y2NjY2G1otU2r55h8LjOwsbGxsdsGTbK5PMDaYPtvvTRsbGzst2fPY+b3f/7V+TY2Njb2G7PbFf3THx9f+7bRzrGxsbEPZefBkAxon1v58+hq94mNjY19D3ttxJvzJsi8gfWPJ7GxsbGvYecNnXlbKo+o9vd1Lw0bGxv7w9l5zLSFSjsGzjH1UWJjY2Mfyt6Fnx/TrsFzMejFxsbGPoLdNnfaI0sKjLVvr9tP2NjY2Bew27bOpMxoA2zDuAIbGxv7UHayiSRUJgPgNrRaMDY2NvYN7LUWUv7MpHmUHHcUrtjY2NjXsJ+v5kyKiq945YdbFDzY2NjYF7DnQZKXGXm7qm0q1fNtbGxs7A9nr7Xj97aikvZTfdUSGxsb+zJ226ypw2NpPJywi4jFxsbGPpSdbCIvIfJyYv6eekiMjY2NfQF7rQhpQ27vFZ8Nly+xsbGxP5zdDlDbTbRxlR9EO0LGxsbGvoGdlA35obSD27YgaY8DGxsb+2z23uJk3lrKB8bFUBkbGxv7AvbkikwbfmvxOWozYWNjY1/Djoamm0qFfPCQN7CK8QA2Njb2cey1ptIc2UZd/jw2Njb2Dex2rQ1Z80DKP5UUM9jY2Ng3sNfCqR3Z7m39LzbCsLGxsY9m55GTt+bbMXASmWtDZWxsbOx72HnbPX/m55pHPzIVwcbGxr6SnQ9i5zG5VsZgY2NjY7fsfLvz60H5k9jY2Ng3sCdD1skIYcLedlMJGxsb+8PZk0uNeVC1126ipn/8XdjY2Ninsu9Z2NjY2NjY2NjY2G+z/gDY6IXIX4fX/wAAAABJRU5ErkJggg=="></ul> <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">bookmark</i> <span class="visuallyhidden">bookmark</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button"><li class="mdl-menu__item"> <a class="post_tag-link" href="/tags/HTTP/">HTTP</a></li></ul> <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">share</i> <span class="visuallyhidden">share</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button"><a class="post_share-link" href="#"><li class="mdl-menu__item"> <span id="/2017/06/20/缓存/" class="leancloud-views_num" data-flag-title="缓存">&nbsp;浏览量</span></li></a><a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=缓存&url=https://gl09025.github.io/hexo-blog/2017/06/20/缓存/index.html&pic=https://gl09025.github.io/hexo-blog/img/favicon.png&searchPic=false&style=simple" target="_blank"><li class="mdl-menu__item"> 分享到微博</li></a><a class="post_share-link" href="https://twitter.com/intent/tweet?text=缓存&url=https://gl09025.github.io/hexo-blog/2017/06/20/缓存/index.html&via=GanLi" target="_blank"><li class="mdl-menu__item"> 分享到 Twitter</li></a><a class="post_share-link" href="https://plus.google.com/share?url=https://gl09025.github.io/hexo-blog/2017/06/20/缓存/index.html" target="_blank"><li class="mdl-menu__item"> 分享到 Google+</li></a></ul></div><div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out"><blockquote><p>本文浅谈了下http缓存<br>文中有任何错误，欢迎批评指正</p></blockquote><h2 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h2><p> 在通过HTTTP协议获取网页内容的时候，下载文件的速度开销是很大的，尤其是大型的网页，而且每次的响应都需要重复的往返通信。这就导致了浏览器处理内容时间加长，也增加了流量费用。<br> <em>本文主要摘抄一部分理论，具体操作可以查看参考中的链接</em></p><h2 id="什么是缓存"><a href="#什么是缓存" class="headerlink" title="什么是缓存"></a>什么是缓存</h2><p> 缓存是指存储指定资源的一份拷贝，并在下次请求该资源时提供该拷贝的技术。</p><h2 id="缓存机制"><a href="#缓存机制" class="headerlink" title="缓存机制"></a>缓存机制</h2><p> 缓存是跟HTTP协议有关的，所以通过设置HTTP的报文首部字段可以指定是否需要缓存和一些其他的缓存功能。</p><h3 id="HTTP协议中与缓存相关的首部字段"><a href="#HTTP协议中与缓存相关的首部字段" class="headerlink" title="HTTP协议中与缓存相关的首部字段"></a>HTTP协议中与缓存相关的首部字段</h3><p>1.通用首部字段</p><table><thead><tr><th style="text-align:left">字段名称</th><th style="text-align:left">说明</th></tr></thead><tbody><tr><td style="text-align:left">Cache-Control</td><td style="text-align:left">控制缓存的行为</td></tr><tr><td style="text-align:left">Pragma</td><td style="text-align:left">http1.0的旧社会遗物，值为“no-cache”时禁用缓存</td></tr></tbody></table><p>2.请求首部字段</p><table><thead><tr><th style="text-align:left">字段名称</th><th style="text-align:left">说明</th></tr></thead><tbody><tr><td style="text-align:left">If-Match</td><td style="text-align:left">比较ETag是否一致</td></tr><tr><td style="text-align:left">If-None-Match</td><td style="text-align:left">比较ETag是否不一致</td></tr><tr><td style="text-align:left">If-Modefied-Since</td><td style="text-align:left">比较资源最后更新的时间是否一致</td></tr><tr><td style="text-align:left">If-Unmodefied-Since</td><td style="text-align:left">比较资源最后更新的时间是否不一致</td></tr></tbody></table><p>3.响应首部字段</p><table><thead><tr><th style="text-align:left">字段名称</th><th style="text-align:left">说明</th></tr></thead><tbody><tr><td style="text-align:left">ETag</td><td style="text-align:left">资源的匹配信息</td></tr></tbody></table><p>4.实体首部字段</p><table><thead><tr><th style="text-align:left">字段名称</th><th style="text-align:left">说明</th></tr></thead><tbody><tr><td style="text-align:left">Expires</td><td style="text-align:left">http1.0的遗留物，实体主题过期的时间</td></tr><tr><td style="text-align:left">Last-Modefied</td><td style="text-align:left">资源的最后一次修改的时间</td></tr></tbody></table><h3 id="使用Cache-Control"><a href="#使用Cache-Control" class="headerlink" title="使用Cache-Control"></a>使用Cache-Control</h3><p> 在http1.0时代，使用<code>Pragma</code>和<code>Expires</code><br> 到了http1.1的时候，现在网站基本都是用的http1.1，增加了<code>Cache-Control</code>来定义缓存过期时间，若报文中同时出现了 Pragma、Expires 和 Cache-Control，会以 Cache-Control 为准。所以，使用cache-control就够了。<br> Cache-Control 的格式为：</p><pre><code>  &quot;Cache-Control&quot; &quot;:&quot; cache-directive
+</code></pre><p> 作为请求首部时，cache-directive的可选值有：</p><table><thead><tr><th style="text-align:left">字段名称</th><th style="text-align:left">说明</th></tr></thead><tbody><tr><td style="text-align:left">no-cache</td><td style="text-align:left">告知（代理）服务器不直接使用缓存，要求向原服务器发起请求</td></tr><tr><td style="text-align:left">no-store</td><td style="text-align:left">所有内容都不会被保存到缓存或Internet临时文件中</td></tr><tr><td style="text-align:left">max-age=delta-seconds</td><td style="text-align:left">告知服务器客户端希望接收一个存在时间（Age）不大于delta-second秒的资源</td></tr><tr><td style="text-align:left">max-stale[=delta-seconds]</td><td style="text-align:left">告知（代理）服务器，客户端愿意接收一个超过缓存时间的资源，若有定义delta-seconds则为delta-seconds秒，若没有则为任意超出的时间</td></tr><tr><td style="text-align:left">min-fresh=delta-seconds</td><td style="text-align:left">告知（代理）服务器，客户端希望接收一个在小于delta-seconds秒内被更新过的资源</td></tr><tr><td style="text-align:left">no-transform</td><td style="text-align:left">告知（代理）服务器，客户端希望获取实体数据没有被转换（比如压缩）过的资源</td></tr><tr><td style="text-align:left">only-if-cached</td><td style="text-align:left">告知（代理）服务器，客户端希望获取缓存的内容（若有），而不用向原服务器发送请求</td></tr><tr><td style="text-align:left">cache-extension</td><td style="text-align:left">自定义扩展值，若服务器不识别该值将被忽略掉</td></tr></tbody></table><p>作为响应首部时，cache-directive的可选值有：</p><table><thead><tr><th style="text-align:left">字段名称</th><th style="text-align:left">说明</th></tr></thead><tbody><tr><td style="text-align:left">public</td><td style="text-align:left">表明任何情况下都得缓存该资源（即使是需要HTTP认证的资源）</td></tr><tr><td style="text-align:left">Private[=”field-name”]</td><td style="text-align:left">表明返回报文中全部或部分（若指定了field-name则为field-name的字段数据）仅开放给某些用户（服务器指定的share-user，如代理服务器）做缓存使用，其他用户则不能换粗这些数据</td></tr><tr><td style="text-align:left">no-cache</td><td style="text-align:left">不直接使用缓存，要求向服务区发起（新鲜度校验）请求</td></tr><tr><td style="text-align:left">no-store</td><td style="text-align:left">所有内容都不会被保存到缓存或Internet临时文件中</td></tr><tr><td style="text-align:left">no-transform</td><td style="text-align:left">告知客户端缓存文件是不得对实体数据做任何改变</td></tr><tr><td style="text-align:left">only-if-cached</td><td style="text-align:left">告知（代理）服务器客户端希望获取缓存的内容（若有），而不用向原服务器发送请求</td></tr><tr><td style="text-align:left">must-revalidate</td><td style="text-align:left">当前资源一定是向原服务器发去验证请求的，若请求失败会返回504（而非代理服务器上的缓存）</td></tr><tr><td style="text-align:left">proxy-revalidate</td><td style="text-align:left">与must-revalidate类似，但仅能应用于共享缓存（如代理）</td></tr><tr><td style="text-align:left">max-age=delta-seconds</td><td style="text-align:left">告知客户端该资源在delta-sec秒内是新鲜的，无需向服务器发请求</td></tr><tr><td style="text-align:left">s-maxage=delta-seconds</td><td style="text-align:left">同max-age，但仅应用于共享缓存（如代理）</td></tr><tr><td style="text-align:left">cache-extension</td><td style="text-align:left">自定义扩展值，若服务器不识别该值将被忽略掉</td></tr></tbody></table><p><code>Cache-Control</code>可以自由组合可选值，比如</p><pre><code>Cache-Control: max-age=3600, must-revalidate
+</code></pre><p>它意味着该资源是从原服务器上取得的，且其缓存（新鲜度）的有效时间为一小时，在后续一小时内，用户重新访问该资源则无须发送请求。 当然这种组合的方式也会有些限制，比如 no-cache 就不能和 max-age、min-fresh、max-stale 一起搭配使用。</p><h4 id="缓存校验字段"><a href="#缓存校验字段" class="headerlink" title="缓存校验字段"></a>缓存校验字段</h4><p> <code>Last-Modified</code>和<code>ETag</code><br> 现在有一个问题就是，<strong>客户端向服务器发送了请求，那服务器是不是一定要发送所有请求的内容呢？</strong><br> 因为请求的内容可能还是与服务器上是一致的，所以Http1.1新增了几个首部字段来做这件事情。<br>1.Last-Modified<br> 服务器将资源传递给客户端时，会将资源最后更改的时间以“Last-Modified: GMT”的形式加在实体首部上一起返回给客户端。</p><pre><code>  Last-Modified: Fri, 22 Jul 2016 01:47:00 GMT
+</code></pre><p> 有两个请求报文字段来标记修改时间<br> ⑴ If-Modified-Since: Last-Modified-value</p><pre><code>  If-Modified-Since: Thu, 31 Mar 2016 07:07:52 GMT
+</code></pre><p> 如果一致就返回304和响应报头<br> ⑵ If-Unmodified-Since: Last-Modified-value<br> 如果Last-Modified匹配不上（资源在服务端的最后更新时间改变了），则返回412(Precondition Failed) 状态码给客户端。</p><p>2.ETag<br> 上文中的Last-Modified存在一个问题，在服务器上一个资源被修改了，但实际的内容却并没有修改，还是会返回整个请求的资源。<br> 为了解决这个可能存在的不准确问题，HTTP1.1推出了ETag实体首部字段。ETag是缓存的一个强校验器。<br> 客户端使用<code>If-None-Match</code>这个请求头字段来验证缓存。<br> ⑴ If-None-Match: ETag-value<br> 告诉服务端如果 ETag 没匹配上需要重发资源数据，否则直接回送304 和响应报头即可。<br> ⑵ If-Match: ETag-value<br> 若匹配不到ETag，或者收到了“*”值而当前并没有该资源实体，则应当返回412(Precondition Failed) 状态码给客户端。否则服务器直接忽略该字段。</p><blockquote><p>参考文章<br><a href="http://imweb.io/topic/5795dcb6fb312541492eda8c" target="_blank" rel="noopener">HTTP缓存控制小结</a><br><a href="http://www.cnblogs.com/vajoy/p/5341664.html" target="_blank" rel="noopener">浅谈浏览器http的缓存机制</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Caching_FAQ" target="_blank" rel="noopener">HTTP 缓存 | MDN</a><br><a href="https://developers.google.com/web/fundamentals/performance/" target="_blank" rel="noopener">HTTP 缓存|Web|Google Developers</a>optimizing-content-efficiency/http-caching?hl=zh-cn]<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Cache-Control" target="_blank" rel="noopener">Cache-Control</a></p></blockquote></div><div id="disqus-comment"><div id="disqus_thread"></div><style>.disqus_click_btn{line-height:30px;margin:0;min-width:50px;padding:0 14px;display:inline-block;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;text-transform:uppercase;letter-spacing:0;overflow:hidden;will-change:box-shadow;transition:box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);outline:0;cursor:pointer;text-decoration:none;text-align:center;vertical-align:middle;border:0;background:rgba(158,158,158,.2);box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);color:#fff;background-color:#757575;text-shadow:0;display:none}</style><div class="btn_click_load"> <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config=function(){this.page.url="https://gl09025.github.io/hexo-blog/2017/06/20/缓存/",this.page.identifier="https://gl09025.github.io/hexo-blog/2017/06/20/缓存/"}</script><script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 4000,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//ganliblog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//ganliblog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script></div><style>#disqus-comment{background-color:#eee;padding:2pc}</style></div><nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col"> <a href="/2017/07/21/用原生JS写AJAX例子/" id="post_nav-newer" class="prev-content"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation"> <i class="material-icons">arrow_back</i></button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新篇</a><div class="section-spacer"></div> <a href="/2017/06/01/white-space/" id="post_nav-older" class="next-content">旧篇 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation"> <i class="material-icons">arrow_forward</i></button></a></nav></div></div><div class="sidebar-overlay"></div><aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation"><div id="sidebar-main"><div class="sidebar-header header-cover" style="background-image:url(/img/sidebar_header.png)"><div class="top-bar"></div> <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display:initial" data-upgraded=",MaterialButton,MaterialRipple"> <i class="material-icons">clear_all</i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button><div class="sidebar-image"> <img src="/img/avatar.png" alt="GanLi's avatar"></div> <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">gl09025@gmail.com<b class="caret"></b></a></div><ul class="nav sidebar-nav"><li class="dropdown"><ul id="settings-dropdown" class="dropdown-menu"><li> <a href="mailto:gl09025@gmail.com" target="_blank" title="Email Me"><i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i> Email Me</a></li></ul></li><li id="sidebar-first-li"> <a href="/"><i class="material-icons sidebar-material-icons">home</i> 主页</a></li><li class="dropdown"> <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown"><i class="material-icons sidebar-material-icons">chrome_reader_mode</i> 分类<b class="caret"></b></a><ul class="dropdown-menu"><li> <a class="sidebar_archives-link" href="/categories/技术/">技术<span class="sidebar_archives-count">29</span></a></li><li><a class="sidebar_archives-link" href="/categories/数学/">数学<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/科学上网/">科学上网<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件/">软件<span class="sidebar_archives-count">3</span></a></li></ul></li><li> <a href="/timeline.html" title="归档"><i class="material-icons sidebar-material-icons">inbox</i> 归档</a></li><li> <a href="/tags.html" title="标签云"><i class="material-icons sidebar-material-icons">cloud</i> 标签云</a></li><li class="divider"></li><li> <a href="/archives">文章总数 <span class="sidebar-badge">35</span></a></li><li class="divider"></li></ul></div></aside><div id="back-to-top" class="toTop-wrap"> <a href="#top" class="toTop"><i class="material-icons footer_top-i">expand_less</i></a></div><footer class="mdl-mini-footer" id="bottom"><div class="mdl-mini-footer--left-section sns-list"> <a href="https://github.com/gl09025" target="_blank"><button class="mdl-mini-footer--social-btn social-btn footer-sns-github"> <span class="visuallyhidden">Github</span></button></a></div><div id="copyright"> Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd=new Date;document.write("&nbsp;"+fd.getFullYear()+"&nbsp;")</script>GanLi's Blog<br><p>Hosted by <a href="https://pages.coding.me" style="font-weight:700">Coding Pages</a></p></div><div class="mdl-mini-footer--right-section"><div><div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div><div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div></div></div></footer><script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==",!0)</script><script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==",!0)</script><script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==",!0)</script><script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script><script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script><script>AV.initialize("zrrnQyxTXBy3gPT2gXjAEYxf-gzGzoHsz","sj1mlgeMLkhsi3nUd6JYs1zi")</script><script type="text/ls-javascript" id="leancloud-views-script">
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script><script>var agent=navigator.userAgent.toLowerCase();agent.indexOf("ucbrowser")>0&&(document.write('<link rel="stylesheet" href="/css/uc.css">'),alert("由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。"))</script><script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==",!0)</script><script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script><script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script><script>!function(){for(var e=document.querySelectorAll('script[type="text/ls-javascript"]'),r=0;r<e.length;++r){var o=e[r];lsloader.runInlineScript(o.id,o.id)}}(),console.log("\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n","color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;","color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;")</script></main></div></body></html>

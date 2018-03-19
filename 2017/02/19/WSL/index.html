@@ -1,0 +1,197 @@
+<!DOCTYPE html><html style="display:none" lang="zh"><head><meta charset="utf-8"><script>window.materialVersion="1.5.2",window.oldVersion=["codestartv1","1.3.4","1.4.0","1.4.0b1","1.5.0"]</script><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn1.lncld.net"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="renderer" content="webkit"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title> 让WSL变得更好看 | GanLi&#39;s Blog</title><link rel="icon shortcut" type="image/ico" href="/img/favicon.png"><link rel="icon" href="/img/favicon.png"><meta name="format-detection" content="telephone=no"><meta name="description" itemprop="description" content="前端"><meta name="keywords" content="null,WSL,windows"><meta name="theme-color" content="#0097A7"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><!--[if lte IE 9]><link rel="stylesheet" href="/css/ie-blocker.css"><script src="/js/ie-blocker.zhCN.js"></script><![endif]--><script>window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}},lsloader.removeLS=function(e){try{localStorage.removeItem(e)}catch(e){}},lsloader.setLS=function(e,t){try{localStorage.setItem(e,t)}catch(e){}},lsloader.getLS=function(e){var t="";try{t=localStorage.getItem(e)}catch(e){t=""}return t},versionString="/*"+(window.materialVersion||"unknownVersion")+"*/",lsloader.clean=function(){try{for(var e=[],t=0;t<localStorage.length;t++)e.push(localStorage.key(t));e.forEach(function(e){var t=lsloader.getLS(e);window.oldVersion&&window.oldVersion.reduce(function(e,n){return e||-1!==t.indexOf("/*"+n+"*/")},!1)&&lsloader.removeLS(e)})}catch(e){}},lsloader.clean(),lsloader.load=function(e,t,n,s){var a;if("boolean"==typeof n&&(s=n,n=void 0),s=s||!1,n=n||function(){},(a=this.getLS(e))&&-1===a.indexOf(versionString))return this.removeLS(e),void this.requestResource(e,t,n,s);if(a){if(a.split(versionString)[0]!=t)return console.log("reload:"+t),this.removeLS(e),void this.requestResource(e,t,n,s);a=a.split(versionString)[1],s?(this.jsRunSequence.push({name:e,code:a}),this.runjs(t,e,a)):(document.getElementById(e).appendChild(document.createTextNode(a)),n())}else this.requestResource(e,t,n,s)},lsloader.requestResource=function(e,t,n,s){var a=this;s?this.iojs(t,e,function(e,t,n){a.setLS(t,e+versionString+n),a.runjs(e,t,n)}):this.iocss(t,e,function(n){document.getElementById(e).appendChild(document.createTextNode(n)),a.setLS(e,t+versionString+n)},n)},lsloader.iojs=function(e,t,n){var s=this;s.jsRunSequence.push({name:t,code:""});try{var a=new XMLHttpRequest;a.open("get",e,!0),a.onreadystatechange=function(){if(4==a.readyState){if((a.status>=200&&a.status<300||304==a.status)&&""!=a.response)return void n(e,t,a.response);s.jsfallback(e,t)}},a.send(null)}catch(n){s.jsfallback(e,t)}},lsloader.iocss=function(e,t,n,s){var a=this;try{var o=new XMLHttpRequest;o.open("get",e,!0),o.onreadystatechange=function(){if(4==o.readyState){if((o.status>=200&&o.status<300||304==o.status)&&""!=o.response)return n(o.response),void s();a.cssfallback(e,t,s)}},o.send(null)}catch(n){a.cssfallback(e,t,s)}},lsloader.iofonts=function(e,t,n,s){var a=this;try{var o=new XMLHttpRequest;o.open("get",e,!0),o.onreadystatechange=function(){if(4==o.readyState){if((o.status>=200&&o.status<300||304==o.status)&&""!=o.response)return n(o.response),void s();a.cssfallback(e,t,s)}},o.send(null)}catch(n){a.cssfallback(e,t,s)}},lsloader.runjs=function(e,t,n){if(t&&n)for(var s in this.jsRunSequence)this.jsRunSequence[s].name==t&&(this.jsRunSequence[s].code=n);if(this.jsRunSequence[0]&&this.jsRunSequence[0].code&&"failed"!=this.jsRunSequence[0].status)(a=document.createElement("script")).appendChild(document.createTextNode(this.jsRunSequence[0].code)),a.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(a),this.jsRunSequence.shift(),this.jsRunSequence.length>0&&this.runjs();else if(this.jsRunSequence[0]&&"failed"==this.jsRunSequence[0].status){var a,o=this;(a=document.createElement("script")).src=this.jsRunSequence[0].path,a.type="text/javascript",this.jsRunSequence[0].status="loading",a.onload=function(){o.jsRunSequence.shift(),o.jsRunSequence.length>0&&o.runjs()},document.body.appendChild(a)}},lsloader.tagLoad=function(e,t){this.jsRunSequence.push({name:t,code:"",path:e,status:"failed"}),this.runjs()},lsloader.jsfallback=function(e,t){if(!this.jsnamemap[t]){this.jsnamemap[t]=t;for(var n in this.jsRunSequence)this.jsRunSequence[n].name==t&&(this.jsRunSequence[n].code="",this.jsRunSequence[n].status="failed",this.jsRunSequence[n].path=e);this.runjs()}},lsloader.cssfallback=function(e,t,n){if(!this.cssnamemap[t]){this.cssnamemap[t]=1;var s=document.createElement("link");s.type="text/css",s.href=e,s.rel="stylesheet",s.onload=s.onerror=n;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(s,a)}},lsloader.runInlineScript=function(e,t){var n=document.getElementById(t).innerText;this.jsRunSequence.push({name:e,code:n}),this.runjs()}</script><script>function Queue(){this.dataStore=[],this.offer=function(e){this.debug&&console.log("Offered a Queued Function.");"function"==typeof e?this.dataStore.push(e):console.log("You must offer a function.")},this.poll=function(){this.debug&&console.log("Polled a Queued Function.");return this.dataStore.shift()},this.execNext=function(){var e=this.poll();void 0!==e&&(this.debug&&console.log("Run a Queued Function."),e())},this.debug=!1,this.startDebug=function(){this.debug=!0}}var queue=new Queue</script><style id="material_css"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style id="style_css"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style id="prettify_css"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style id="prettify_theme"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style>body,html{font-family:Roboto,"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;overflow-x:hidden!important}code{font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace}a{color:#00838f}#scheme-Paradox .hot_tags-count,#scheme-Paradox .sidebar-colored .sidebar-badge,#scheme-Paradox .sidebar-colored .sidebar-header,#scheme-Paradox .sidebar_archives-count,#search-form-label:after,#search-label,.mdl-card__media{background-color:#0097a7!important}#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus,#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover{color:#0097a7!important}#ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a,#post_entry-right-info,.sidebar-colored .sidebar-nav li:hover>a,.sidebar-colored .sidebar-nav li:hover>a i,.sidebar-colored .sidebar-nav li>a:focus i,.sidebar-colored .sidebar-nav li>a:hover,.sidebar-colored .sidebar-nav li>a:hover i,.sidebar-colored .sidebar-nav>.open>a,.sidebar-colored .sidebar-nav>.open>a:focus,.sidebar-colored .sidebar-nav>.open>a:hover{color:#0097a7!important}.toTop{background:#757575!important}.material-layout .material-index>.material-nav,.material-layout .material-post>.material-nav,.material-nav a{color:#757575}#scheme-Paradox .MD-burger-layer{background-color:#757575}#scheme-Paradox #post-toc-trigger-btn{color:#757575}.post-toc a:hover{color:#00838f;text-decoration:underline}</style><style>body{background-color:#f5f5f5}#scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{background-color:#fff}</style><style>.fade{transition:all .8s linear;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);opacity:1}.fade.out{opacity:0}</style><link href="https://fonts.proxy.ustclug.org/css?family=Roboto:300,400,500" rel="stylesheet"><style id="material_icons"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==",!0)</script><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="GanLi&#39;s Blog"><meta name="msapplication-starturl" content="https://gl09025.github.io/hexo-blog/2017/02/19/WSL/"><meta name="msapplication-navbutton-color" content="#0097A7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="GanLi&#39;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="apple-touch-icon" href="/img/favicon.png"><meta name="google-site-verification" content="bkoJTxB885wb1fQIMSYlKVwCWTctFl44Qmv_Pro6efc"><meta property="og:url" content="https://gl09025.github.io/hexo-blog/2017/02/19/WSL/"><meta property="og:type" content="blog"><meta property="og:title" content="让WSL变得更好看 | GanLi&#39;s Blog"><meta property="og:image" content="/img/favicon.png"><meta property="og:description" content="前端"><meta property="og:article:tag" content="WSL"><meta property="og:article:tag" content="windows"><meta property="article:published_time" content="Sun Feb 19 2017 16:43:03 GMT+0000"><meta property="article:modified_time" content="Tue Jan 09 2018 02:19:04 GMT+0000"><meta name="twitter:card" content="summary_large_image"><link rel="canonical" href="https://gl09025.github.io/hexo-blog/2017/02/19/WSL/index.html"><script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://gl09025.github.io/hexo-blog/2017/02/19/WSL/index.html",
+    "headline": "让WSL变得更好看",
+    "datePublished": "Sun Feb 19 2017 16:43:03 GMT+0000",
+    "dateModified": "Tue Jan 09 2018 02:19:04 GMT+0000",
+    "author": {
+        "@type": "Person",
+        "name": "GanLi",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "一场修行"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "GanLi&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",WSL,windowsnull",
+    "description": "前端",
+}
+</script><link rel="stylesheet" href="/css/prism.css" type="text/css"></head><body id="scheme-Paradox" class="lazy"><div class="material-layout mdl-js-layout has-drawer is-upgraded"><main class="material-layout__content" id="main"><div id="top"></div> <button class="MD-burger-icon sidebar-toggle"><span class="MD-burger-layer"></span></button> <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon"> <i class="material-icons">format_list_numbered</i></button><ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh;overflow-y:scroll"><ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#首先开启windows10上面的bash"><span class="post-toc-number">1.</span> <span class="post-toc-text">首先开启windows10上面的bash</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#wsl-terminal"><span class="post-toc-number">2.</span> <span class="post-toc-text">wsl-terminal</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#oh-my-zsh"><span class="post-toc-number">3.</span> <span class="post-toc-text">oh my zsh</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#颜色"><span class="post-toc-number">4.</span> <span class="post-toc-text">颜色</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装nodejs和npm"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">安装nodejs和npm</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#npm-i-g-vue-cli-出错"><span class="post-toc-number">4.1.1.</span> <span class="post-toc-text">npm i -g vue-cli 出错</span></a></li></ol></li></ol></li></ol></ul><div class="material-post_container"><div class="material-post mdl-grid"><div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col"><div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50"><script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script><p class="article-headline-p"> 让WSL变得更好看</p></div><div class="mdl-color-text--grey-700 mdl-card__supporting-text meta"><div id="author-avatar"> <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"></div><div> <strong>GanLi</strong> <span>2月 19, 2017</span></div><div class="section-spacer"></div> <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">devices other</i> <span class="visuallyhidden">devices other</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button"><li class="mdl-menu__item">在其它设备中阅读本文章</li> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACZ0lEQVR42u3ay26DQBAEQP//TyfXSJFx9y4MJCpOlh9A7YFZ98zr618fLzw8PDw8PDw8vIfxXvHx8/sfLvDmO7/fP36nvTc8PDy8SV5+u29P+ub9d2fIr9UuJR4eHt4kLykGx9Tk0w+P9eBsx0uAh4eH9zReUgxyRltO8PDw8P4ir33c558+qO7h4eHhnRpGrJWKPKI94d7w8PDwRnhrDbCZ17f19/Dw8PBGhq7aUYC2DNRDV3h4eHgX8PIQNokSjtlrjbR6mfDw8PAu5rVtrbWFWEO2DTM8PDy8GV5bAHYaYzm1DSbw8PDw7uK1cUNysfwqxXDAWmHAw8PDu4CXbKbbspGPEbRbZzw8PLx7eW2L66zt71rxwMPDw7uX1wYT+4MCa0WoaLbh4eHhXcxrN77Jpnktkshj3w9RBR4eHt4Ib+3hni/EzKYcDw8Pb4aXt7va0Da/3eNf5a/x8PDwJnltZNDGDflGvN3E4+Hh4c3z1h7T+y20ZIygHXHAw8PDm+GttcH2g4a1JYt+i4eHh3cxr/iTn0SocXywNt4aDWbh4eHh3crLg4a2JdaGvEl4gYeHhzfPa8tDG/XuDApsZS14eHh4F/Da8DTfcOch71p5wMPDw5vntcf+RjnhtdfFw8PDm+S1j+PjUGDtm/liJcUGDw8Pb4a31tbKQ42zhgaizT0eHh7eIK8dWm0jg9f2ES0EHh4e3oN5eYurPU9eQi4sDHh4eHgn8Xba/zub+NNmyvDw8PBO5SUXy9tXpzW0ggEsPDw8vHneTgMsKSrtAMHab/Hw8PBmeP/vwMPDw8PDw8PDe8DxDYzspYE+53ZeAAAAAElFTkSuQmCC"></ul> <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">bookmark</i> <span class="visuallyhidden">bookmark</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button"><li class="mdl-menu__item"> <a class="post_tag-link" href="/tags/WSL/">WSL</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/windows/">windows</a></li></ul> <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">share</i> <span class="visuallyhidden">share</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button"><a class="post_share-link" href="#"><li class="mdl-menu__item"> <span id="/2017/02/19/WSL/" class="leancloud-views_num" data-flag-title="让WSL变得更好看">&nbsp;浏览量</span></li></a><a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=让WSL变得更好看&url=https://gl09025.github.io/hexo-blog/2017/02/19/WSL/index.html&pic=https://gl09025.github.io/hexo-blog/img/favicon.png&searchPic=false&style=simple" target="_blank"><li class="mdl-menu__item"> 分享到微博</li></a><a class="post_share-link" href="https://twitter.com/intent/tweet?text=让WSL变得更好看&url=https://gl09025.github.io/hexo-blog/2017/02/19/WSL/index.html&via=GanLi" target="_blank"><li class="mdl-menu__item"> 分享到 Twitter</li></a><a class="post_share-link" href="https://plus.google.com/share?url=https://gl09025.github.io/hexo-blog/2017/02/19/WSL/index.html" target="_blank"><li class="mdl-menu__item"> 分享到 Google+</li></a></ul></div><div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out"><h3 id="首先开启windows10上面的bash"><a href="#首先开启windows10上面的bash" class="headerlink" title="首先开启windows10上面的bash"></a>首先开启windows10上面的bash</h3><p><a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide" target="_blank" rel="noopener">参考官方教程</a></p><h3 id="wsl-terminal"><a href="#wsl-terminal" class="headerlink" title="wsl-terminal"></a>wsl-terminal</h3><p>安装比bash好用的终端软件<br><a href="https://github.com/goreliu/wsl-terminal" target="_blank" rel="noopener">wsl-terminal-github</a></p><h3 id="oh-my-zsh"><a href="#oh-my-zsh" class="headerlink" title="oh my zsh"></a>oh my zsh</h3><p><a href="http://ohmyz.sh/" target="_blank" rel="noopener">官网</a><br><a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="noopener">Github</a></p><p>我安装了agnoster主题，但安装完了默认的字体还是不支持这个主题，下载字体<br><a href="https://github.com/powerline/fonts/tree/master/DejaVuSansMono" target="_blank" rel="noopener">https://github.com/powerline/fonts/tree/master/DejaVuSansMono</a></p><p>我选择了DejaVu Sans Mono for Powerline.ttf字体，双击安装。</p><h3 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h3><p>让终端颜色更好看<br><a href="https://github.com/seebi/dircolors-solarized" target="_blank" rel="noopener">Github</a></p><p>将仓库克隆下来，找个位置放一下。我就直接放在</p><pre class="language-bash"><code class="language-bash">~/Git
+</code></pre><p>再执行这条语句</p><pre class="language-bash"><code class="language-bash"><span class="token function">eval</span> <span class="token variable"><span class="token variable">`</span><span class="token function">dircolors</span> ~/Git/dircolors-solarized/dircolors.256dark<span class="token variable">`</span></span>
+</code></pre><h4 id="安装nodejs和npm"><a href="#安装nodejs和npm" class="headerlink" title="安装nodejs和npm"></a>安装nodejs和npm</h4><pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> autoremove --purge <span class="token function">npm</span> node nodejs
+curl -sL https://deb.nodesource.com/setup_7.x <span class="token operator">|</span> <span class="token function">sudo</span> -E <span class="token function">bash</span> -
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> -y nodejs
+<span class="token function">sudo</span> <span class="token function">npm</span> <span class="token function">install</span> -g <span class="token function">npm</span>
+</code></pre><p>运行 npm config set loglevel http，让你知道 npm 发的每一个请求<br>运行 npm config set progress false，关闭那个进度条<br>为了让你的安装速度变快，运行 npm config set registry <a href="https://registry.npm.taobao.org/想要恢复成原样，只需要" target="_blank" rel="noopener">https://registry.npm.taobao.org/想要恢复成原样，只需要</a> npm config delete registry 即可</p><h5 id="npm-i-g-vue-cli-出错"><a href="#npm-i-g-vue-cli-出错" class="headerlink" title="npm i -g vue-cli 出错"></a>npm i -g vue-cli 出错</h5><pre class="language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> -g async
+$ <span class="token function">npm</span> <span class="token function">install</span> -g abbrev
+$ <span class="token function">npm</span> <span class="token function">install</span> -g http-errors
+$ <span class="token function">npm</span> <span class="token function">install</span> -g browerify
+$ <span class="token function">npm</span> i -g <span class="token function">npm</span>
+</code></pre><blockquote><p>参考文章<br><a href="https://medium.com/@Andreas_cmj/how-to-setup-a-nice-looking-terminal-with-wsl-in-windows-10-creators-update-2b468ed7c326" target="_blank" rel="noopener">https://medium.com/@Andreas_cmj/how-to-setup-a-nice-looking-terminal-with-wsl-in-windows-10-creators-update-2b468ed7c326</a></p></blockquote></div><div id="disqus-comment"><div id="disqus_thread"></div><style>.disqus_click_btn{line-height:30px;margin:0;min-width:50px;padding:0 14px;display:inline-block;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;text-transform:uppercase;letter-spacing:0;overflow:hidden;will-change:box-shadow;transition:box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);outline:0;cursor:pointer;text-decoration:none;text-align:center;vertical-align:middle;border:0;background:rgba(158,158,158,.2);box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);color:#fff;background-color:#757575;text-shadow:0;display:none}</style><div class="btn_click_load"> <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config=function(){this.page.url="https://gl09025.github.io/hexo-blog/2017/02/19/WSL/",this.page.identifier="https://gl09025.github.io/hexo-blog/2017/02/19/WSL/"}</script><script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 4000,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//ganliblog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//ganliblog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script></div><style>#disqus-comment{background-color:#eee;padding:2pc}</style></div><nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col"> <a href="/2017/02/19/shadowsocks/" id="post_nav-newer" class="prev-content"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation"> <i class="material-icons">arrow_back</i></button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新篇</a><div class="section-spacer"></div> <a href="/2017/02/19/高效命令行/" id="post_nav-older" class="next-content">旧篇 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation"> <i class="material-icons">arrow_forward</i></button></a></nav></div></div><div class="sidebar-overlay"></div><aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation"><div id="sidebar-main"><div class="sidebar-header header-cover" style="background-image:url(/img/sidebar_header.png)"><div class="top-bar"></div> <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display:initial" data-upgraded=",MaterialButton,MaterialRipple"> <i class="material-icons">clear_all</i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button><div class="sidebar-image"> <img src="/img/avatar.png" alt="GanLi's avatar"></div> <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">gl09025@gmail.com<b class="caret"></b></a></div><ul class="nav sidebar-nav"><li class="dropdown"><ul id="settings-dropdown" class="dropdown-menu"><li> <a href="mailto:gl09025@gmail.com" target="_blank" title="Email Me"><i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i> Email Me</a></li></ul></li><li id="sidebar-first-li"> <a href="/"><i class="material-icons sidebar-material-icons">home</i> 主页</a></li><li class="dropdown"> <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown"><i class="material-icons sidebar-material-icons">chrome_reader_mode</i> 分类<b class="caret"></b></a><ul class="dropdown-menu"><li> <a class="sidebar_archives-link" href="/categories/技术/">技术<span class="sidebar_archives-count">29</span></a></li><li><a class="sidebar_archives-link" href="/categories/数学/">数学<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/科学上网/">科学上网<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件/">软件<span class="sidebar_archives-count">3</span></a></li></ul></li><li> <a href="/timeline.html" title="归档"><i class="material-icons sidebar-material-icons">inbox</i> 归档</a></li><li> <a href="/tags.html" title="标签云"><i class="material-icons sidebar-material-icons">cloud</i> 标签云</a></li><li class="divider"></li><li> <a href="/archives">文章总数 <span class="sidebar-badge">35</span></a></li><li class="divider"></li></ul></div></aside><div id="back-to-top" class="toTop-wrap"> <a href="#top" class="toTop"><i class="material-icons footer_top-i">expand_less</i></a></div><footer class="mdl-mini-footer" id="bottom"><div class="mdl-mini-footer--left-section sns-list"> <a href="https://github.com/gl09025" target="_blank"><button class="mdl-mini-footer--social-btn social-btn footer-sns-github"> <span class="visuallyhidden">Github</span></button></a></div><div id="copyright"> Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd=new Date;document.write("&nbsp;"+fd.getFullYear()+"&nbsp;")</script>GanLi's Blog<br><p>Hosted by <a href="https://pages.coding.me" style="font-weight:700">Coding Pages</a></p></div><div class="mdl-mini-footer--right-section"><div><div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div><div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div></div></div></footer><script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==",!0)</script><script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==",!0)</script><script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==",!0)</script><script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script><script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script><script>AV.initialize("zrrnQyxTXBy3gPT2gXjAEYxf-gzGzoHsz","sj1mlgeMLkhsi3nUd6JYs1zi")</script><script type="text/ls-javascript" id="leancloud-views-script">
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script><script>var agent=navigator.userAgent.toLowerCase();agent.indexOf("ucbrowser")>0&&(document.write('<link rel="stylesheet" href="/css/uc.css">'),alert("由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。"))</script><script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==",!0)</script><script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script><script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script><script>!function(){for(var e=document.querySelectorAll('script[type="text/ls-javascript"]'),r=0;r<e.length;++r){var o=e[r];lsloader.runInlineScript(o.id,o.id)}}(),console.log("\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n","color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;","color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;")</script></main></div></body></html>

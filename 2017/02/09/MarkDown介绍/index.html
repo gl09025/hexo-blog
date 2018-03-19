@@ -1,0 +1,194 @@
+<!DOCTYPE html><html style="display:none" lang="zh"><head><meta charset="utf-8"><script>window.materialVersion="1.5.2",window.oldVersion=["codestartv1","1.3.4","1.4.0","1.4.0b1","1.5.0"]</script><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn1.lncld.net"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="renderer" content="webkit"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title> MarkDown介绍 | GanLi&#39;s Blog</title><link rel="icon shortcut" type="image/ico" href="/img/favicon.png"><link rel="icon" href="/img/favicon.png"><meta name="format-detection" content="telephone=no"><meta name="description" itemprop="description" content="前端"><meta name="keywords" content="null,Markdown"><meta name="theme-color" content="#0097A7"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><!--[if lte IE 9]><link rel="stylesheet" href="/css/ie-blocker.css"><script src="/js/ie-blocker.zhCN.js"></script><![endif]--><script>window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}},lsloader.removeLS=function(e){try{localStorage.removeItem(e)}catch(e){}},lsloader.setLS=function(e,t){try{localStorage.setItem(e,t)}catch(e){}},lsloader.getLS=function(e){var t="";try{t=localStorage.getItem(e)}catch(e){t=""}return t},versionString="/*"+(window.materialVersion||"unknownVersion")+"*/",lsloader.clean=function(){try{for(var e=[],t=0;t<localStorage.length;t++)e.push(localStorage.key(t));e.forEach(function(e){var t=lsloader.getLS(e);window.oldVersion&&window.oldVersion.reduce(function(e,n){return e||-1!==t.indexOf("/*"+n+"*/")},!1)&&lsloader.removeLS(e)})}catch(e){}},lsloader.clean(),lsloader.load=function(e,t,n,s){var a;if("boolean"==typeof n&&(s=n,n=void 0),s=s||!1,n=n||function(){},(a=this.getLS(e))&&-1===a.indexOf(versionString))return this.removeLS(e),void this.requestResource(e,t,n,s);if(a){if(a.split(versionString)[0]!=t)return console.log("reload:"+t),this.removeLS(e),void this.requestResource(e,t,n,s);a=a.split(versionString)[1],s?(this.jsRunSequence.push({name:e,code:a}),this.runjs(t,e,a)):(document.getElementById(e).appendChild(document.createTextNode(a)),n())}else this.requestResource(e,t,n,s)},lsloader.requestResource=function(e,t,n,s){var a=this;s?this.iojs(t,e,function(e,t,n){a.setLS(t,e+versionString+n),a.runjs(e,t,n)}):this.iocss(t,e,function(n){document.getElementById(e).appendChild(document.createTextNode(n)),a.setLS(e,t+versionString+n)},n)},lsloader.iojs=function(e,t,n){var s=this;s.jsRunSequence.push({name:t,code:""});try{var a=new XMLHttpRequest;a.open("get",e,!0),a.onreadystatechange=function(){if(4==a.readyState){if((a.status>=200&&a.status<300||304==a.status)&&""!=a.response)return void n(e,t,a.response);s.jsfallback(e,t)}},a.send(null)}catch(n){s.jsfallback(e,t)}},lsloader.iocss=function(e,t,n,s){var a=this;try{var o=new XMLHttpRequest;o.open("get",e,!0),o.onreadystatechange=function(){if(4==o.readyState){if((o.status>=200&&o.status<300||304==o.status)&&""!=o.response)return n(o.response),void s();a.cssfallback(e,t,s)}},o.send(null)}catch(n){a.cssfallback(e,t,s)}},lsloader.iofonts=function(e,t,n,s){var a=this;try{var o=new XMLHttpRequest;o.open("get",e,!0),o.onreadystatechange=function(){if(4==o.readyState){if((o.status>=200&&o.status<300||304==o.status)&&""!=o.response)return n(o.response),void s();a.cssfallback(e,t,s)}},o.send(null)}catch(n){a.cssfallback(e,t,s)}},lsloader.runjs=function(e,t,n){if(t&&n)for(var s in this.jsRunSequence)this.jsRunSequence[s].name==t&&(this.jsRunSequence[s].code=n);if(this.jsRunSequence[0]&&this.jsRunSequence[0].code&&"failed"!=this.jsRunSequence[0].status)(a=document.createElement("script")).appendChild(document.createTextNode(this.jsRunSequence[0].code)),a.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(a),this.jsRunSequence.shift(),this.jsRunSequence.length>0&&this.runjs();else if(this.jsRunSequence[0]&&"failed"==this.jsRunSequence[0].status){var a,o=this;(a=document.createElement("script")).src=this.jsRunSequence[0].path,a.type="text/javascript",this.jsRunSequence[0].status="loading",a.onload=function(){o.jsRunSequence.shift(),o.jsRunSequence.length>0&&o.runjs()},document.body.appendChild(a)}},lsloader.tagLoad=function(e,t){this.jsRunSequence.push({name:t,code:"",path:e,status:"failed"}),this.runjs()},lsloader.jsfallback=function(e,t){if(!this.jsnamemap[t]){this.jsnamemap[t]=t;for(var n in this.jsRunSequence)this.jsRunSequence[n].name==t&&(this.jsRunSequence[n].code="",this.jsRunSequence[n].status="failed",this.jsRunSequence[n].path=e);this.runjs()}},lsloader.cssfallback=function(e,t,n){if(!this.cssnamemap[t]){this.cssnamemap[t]=1;var s=document.createElement("link");s.type="text/css",s.href=e,s.rel="stylesheet",s.onload=s.onerror=n;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(s,a)}},lsloader.runInlineScript=function(e,t){var n=document.getElementById(t).innerText;this.jsRunSequence.push({name:e,code:n}),this.runjs()}</script><script>function Queue(){this.dataStore=[],this.offer=function(e){this.debug&&console.log("Offered a Queued Function.");"function"==typeof e?this.dataStore.push(e):console.log("You must offer a function.")},this.poll=function(){this.debug&&console.log("Polled a Queued Function.");return this.dataStore.shift()},this.execNext=function(){var e=this.poll();void 0!==e&&(this.debug&&console.log("Run a Queued Function."),e())},this.debug=!1,this.startDebug=function(){this.debug=!0}}var queue=new Queue</script><style id="material_css"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style id="style_css"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style id="prettify_css"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style id="prettify_theme"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><style>body,html{font-family:Roboto,"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;overflow-x:hidden!important}code{font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace}a{color:#00838f}#scheme-Paradox .hot_tags-count,#scheme-Paradox .sidebar-colored .sidebar-badge,#scheme-Paradox .sidebar-colored .sidebar-header,#scheme-Paradox .sidebar_archives-count,#search-form-label:after,#search-label,.mdl-card__media{background-color:#0097a7!important}#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus,#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover{color:#0097a7!important}#ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a,#post_entry-right-info,.sidebar-colored .sidebar-nav li:hover>a,.sidebar-colored .sidebar-nav li:hover>a i,.sidebar-colored .sidebar-nav li>a:focus i,.sidebar-colored .sidebar-nav li>a:hover,.sidebar-colored .sidebar-nav li>a:hover i,.sidebar-colored .sidebar-nav>.open>a,.sidebar-colored .sidebar-nav>.open>a:focus,.sidebar-colored .sidebar-nav>.open>a:hover{color:#0097a7!important}.toTop{background:#757575!important}.material-layout .material-index>.material-nav,.material-layout .material-post>.material-nav,.material-nav a{color:#757575}#scheme-Paradox .MD-burger-layer{background-color:#757575}#scheme-Paradox #post-toc-trigger-btn{color:#757575}.post-toc a:hover{color:#00838f;text-decoration:underline}</style><style>body{background-color:#f5f5f5}#scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{background-color:#fff}</style><style>.fade{transition:all .8s linear;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);opacity:1}.fade.out{opacity:0}</style><link href="https://fonts.proxy.ustclug.org/css?family=Roboto:300,400,500" rel="stylesheet"><style id="material_icons"></style><script>void 0===window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){void 0===window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)</script><script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==",!0)</script><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="GanLi&#39;s Blog"><meta name="msapplication-starturl" content="https://gl09025.github.io/hexo-blog/2017/02/09/MarkDown介绍/"><meta name="msapplication-navbutton-color" content="#0097A7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="GanLi&#39;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="apple-touch-icon" href="/img/favicon.png"><meta name="google-site-verification" content="bkoJTxB885wb1fQIMSYlKVwCWTctFl44Qmv_Pro6efc"><meta property="og:url" content="https://gl09025.github.io/hexo-blog/2017/02/09/MarkDown介绍/"><meta property="og:type" content="blog"><meta property="og:title" content="MarkDown介绍 | GanLi&#39;s Blog"><meta property="og:image" content="/img/favicon.png"><meta property="og:description" content="前端"><meta property="og:article:tag" content="Markdown"><meta property="article:published_time" content="Thu Feb 09 2017 23:45:25 GMT+0000"><meta property="article:modified_time" content="Tue Jan 09 2018 02:19:04 GMT+0000"><meta name="twitter:card" content="summary_large_image"><link rel="canonical" href="https://gl09025.github.io/hexo-blog/2017/02/09/MarkDown介绍/index.html"><script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://gl09025.github.io/hexo-blog/2017/02/09/MarkDown介绍/index.html",
+    "headline": "MarkDown介绍",
+    "datePublished": "Thu Feb 09 2017 23:45:25 GMT+0000",
+    "dateModified": "Tue Jan 09 2018 02:19:04 GMT+0000",
+    "author": {
+        "@type": "Person",
+        "name": "GanLi",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "一场修行"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "GanLi&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",Markdownnull",
+    "description": "前端",
+}
+</script><link rel="stylesheet" href="/css/prism.css" type="text/css"></head><body id="scheme-Paradox" class="lazy"><div class="material-layout mdl-js-layout has-drawer is-upgraded"><main class="material-layout__content" id="main"><div id="top"></div> <button class="MD-burger-icon sidebar-toggle"><span class="MD-burger-layer"></span></button> <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon"> <i class="material-icons">format_list_numbered</i></button><ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh;overflow-y:scroll"><ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#跨平台"><span class="post-toc-number">1.</span> <span class="post-toc-text">跨平台</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#共同协作"><span class="post-toc-number">2.</span> <span class="post-toc-text">共同协作</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#排版便利"><span class="post-toc-number">3.</span> <span class="post-toc-text">排版便利</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#拥护者众多"><span class="post-toc-number">4.</span> <span class="post-toc-text">拥护者众多</span></a></li></ol><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#怎么使用Markdown"><span class="post-toc-number"></span> <span class="post-toc-text">怎么使用Markdown</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#流行的编辑器"><span class="post-toc-number">1.</span> <span class="post-toc-text">流行的编辑器</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#常用语法"><span class="post-toc-number">2.</span> <span class="post-toc-text">常用语法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#标题"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">标题</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#列表"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">列表</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#链接和图片"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">链接和图片</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#引用"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">引用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#字体强调"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">字体强调</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#代码块"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">代码块</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#表格"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">表格</span></a></li></ol></li></ol></li></ul><div class="material-post_container"><div class="material-post mdl-grid"><div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col"><div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50"><script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script><p class="article-headline-p"> MarkDown介绍</p></div><div class="mdl-color-text--grey-700 mdl-card__supporting-text meta"><div id="author-avatar"> <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"></div><div> <strong>GanLi</strong> <span>2月 09, 2017</span></div><div class="section-spacer"></div> <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">devices other</i> <span class="visuallyhidden">devices other</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button"><li class="mdl-menu__item">在其它设备中阅读本文章</li> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAACx0lEQVR42u3aQU5jMRAE0Nz/0uEAQFTlNiix318hRiR+fxal7vLjeeXzwMbGxsbGxsbGxn5L9iN+fvigb79vP+H13/72XWtnxsbGxj6bnRwoP8QaI/m00ZmxsbGxL2DnX5lHWh5aa6TkzNjY2NjYybFeDwNro0jycrGxsbGx5wGWgKOlTxx+2NjY2NiTpdIkltql1TwOsbGxse9h56Xp+/z8r/02NjY29huz2ycZS9oBJv9vGJ0cGxsb+1D23gVQDsvr3l2vBhsbG/sednLENswm3zV/TdjY2Nhns5O6tB0b6go2huVrr2iphI2NjX0QOyll26Hl9eckI8Q85LCxsbFvYLcXLuflazKirMXhqN/GxsbG/nB2svpPAi8JpByfV87R77GxsbEPZberpfZYu9ZJ8yoaGxsb+1R2Hj/5Smit7v2LIMTGxsa+h92Wpm2VmyPX6uTotNjY2NgXsEfxEBx3MrS0xTM2Njb2Pez8+kseLXuv2my7xIONjY19KDuPjV3B1v7rpGbAxsbGvoedR9faWidZTuWh2A4h2NjY2Lex8y97xk9y0LWRplhCYWNjYx/NzkvZtQI4Lw/WwnI0gWFjY2N/ODvHtMfK42rv2BMFGDY2NvZB7DaE8hGiLX3XQisflrCxsbHPZrdLnzbY1sIvOWdRG2NjY2MfzV6raXNYO5Dk4VqU1tjY2NiXsdsCYO1YxYWbsmbGxsbGvpO9oUwtA2wt6tpXho2NjX02u33aejWKlsHCKF9OYWNjY5/KfsRP+wrmVyeTZdOGohcbGxv7CHYeOXkB3F4GaldXdXWBjY2NfQG7vdTYXsFpr/K04boYYNjY2NjYZbDNq9zNowg2Njb2xey8AGiX/u1AEsUkNjY29gXslpEcLg+8ZIApal1sbGzsy9hri5u2Tmhr3clLwcbGxr6Hfc+DjY2NjY2NjY2N/TbPF+Ln4pV8cBa4AAAAAElFTkSuQmCC"></ul> <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">bookmark</i> <span class="visuallyhidden">bookmark</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button"><li class="mdl-menu__item"> <a class="post_tag-link" href="/tags/Markdown/">Markdown</a></li></ul> <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">share</i> <span class="visuallyhidden">share</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button"><a class="post_share-link" href="#"><li class="mdl-menu__item"> <span id="/2017/02/09/MarkDown介绍/" class="leancloud-views_num" data-flag-title="MarkDown介绍">&nbsp;浏览量</span></li></a><a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=MarkDown介绍&url=https://gl09025.github.io/hexo-blog/2017/02/09/MarkDown介绍/index.html&pic=https://gl09025.github.io/hexo-blog/img/favicon.png&searchPic=false&style=simple" target="_blank"><li class="mdl-menu__item"> 分享到微博</li></a><a class="post_share-link" href="https://twitter.com/intent/tweet?text=MarkDown介绍&url=https://gl09025.github.io/hexo-blog/2017/02/09/MarkDown介绍/index.html&via=GanLi" target="_blank"><li class="mdl-menu__item"> 分享到 Twitter</li></a><a class="post_share-link" href="https://plus.google.com/share?url=https://gl09025.github.io/hexo-blog/2017/02/09/MarkDown介绍/index.html" target="_blank"><li class="mdl-menu__item"> 分享到 Google+</li></a></ul></div><div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out"><blockquote><p>Markdown已经成为Github圈内所共同使用并认可的编写文档语言</p></blockquote><p>#什么是Markdown<br>Markdown是一种用来写作的轻量级的<strong>标记语言</strong>。何为标记语言，简单点理解就是一种以纯文字符号来表示成文本的相关信息，比如我们熟知的HTML。</p><p>#为什么要用Markdown</p><h2 id="跨平台"><a href="#跨平台" class="headerlink" title="跨平台"></a>跨平台</h2><p>标记语言是纯文本的，所以理论上只需一个系统自带的文本编辑器就可以来书写。如果要获得更舒适的体验还是需要安装相应平台对应的Markdown编辑器或者能够解析markdown语法的网页。</p><h2 id="共同协作"><a href="#共同协作" class="headerlink" title="共同协作"></a>共同协作</h2><p>因为有了全平台（Windows、Linux、OS X）通用的特性，所以换了环境也可以无缝的编写，无需额外的学习成本。通过GitHub平台可以很方便的进行多人协作。</p><h2 id="排版便利"><a href="#排版便利" class="headerlink" title="排版便利"></a>排版便利</h2><p>只需要用少量的文本符号就能够展现页面，具体见文章后半部分的常用语法。</p><h2 id="拥护者众多"><a href="#拥护者众多" class="headerlink" title="拥护者众多"></a>拥护者众多</h2><p>诞生于互联网时期的Markdown，受到GitHub圈极客们的热捧。能够改变世界的程序员们发明了Markdown来解决繁杂又耗时间的文档排版问题，毕竟时间就是金钱。</p><h1 id="怎么使用Markdown"><a href="#怎么使用Markdown" class="headerlink" title="怎么使用Markdown"></a>怎么使用Markdown</h1><h2 id="流行的编辑器"><a href="#流行的编辑器" class="headerlink" title="流行的编辑器"></a>流行的编辑器</h2><ul><li>web全平台<br><a href="https://www.zybuluo.com/" target="_blank" rel="noopener">作业部落</a></li><li>windows平台<br><a href="http://www.markdownpad.com/" target="_blank" rel="noopener">MarkdownPad</a></li><li>OS X平台<br><a href="http://25.io/mou/" target="_blank" rel="noopener">Mou</a></li><li>Linux平台<br><a href="http://sourceforge.net/p/retext/home/ReText/" target="_blank" rel="noopener">ReText</a></li></ul><h2 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h2><p><em><strong>需要注意的是符号都是英文状态下的符号</strong></em><br><br>这里只列出经常用到的一些语法。</p><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>最多支持6级标题<br><img src="http://upload-images.jianshu.io/upload_images/4122870-0d915662d0a3eb8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>在前面加<code>-</code>或者数字<code>1</code></p><p><img src="http://upload-images.jianshu.io/upload_images/4122870-b3b09688ef7ce395.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Markdown有序列表.png"></p><p><img src="http://upload-images.jianshu.io/upload_images/4122870-bd9774094f956ddd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Markdown无序列表.png"></p><h3 id="链接和图片"><a href="#链接和图片" class="headerlink" title="链接和图片"></a>链接和图片</h3><p>两者的区别在于图片前多一个<code>!</code>符号</p><p><img src="http://upload-images.jianshu.io/upload_images/4122870-3107d593132b6be7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Markdown链接.png"></p><p>图片一般都为静态图片,可以上传到GitHub后获取图片的链接或使用其他图床。</p><p><img src="http://upload-images.jianshu.io/upload_images/4122870-a447b285e5331210.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>引用在前面添加<code>&gt;</code>符号</p><p><img src="http://upload-images.jianshu.io/upload_images/4122870-66fab7e7e064bea2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><h3 id="字体强调"><a href="#字体强调" class="headerlink" title="字体强调"></a>字体强调</h3><p>在字体的前后添加<code>**</code>或<code>_</code>来使字体变成粗体或斜体</p><p><img src="http://upload-images.jianshu.io/upload_images/4122870-d997dba4b85d5453.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p><img src="http://upload-images.jianshu.io/upload_images/4122870-e54f7707750d2ea7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Markdown代码块.png"></p><h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>代码</p><pre><code>| 我是标题 | 我是标题 | 我是标题 |
+| ------| ------ | ------ |
+| 短文本 | 中等文本 | 稍微长一点的文本 |
+| 稍微长一点的文本 | 短文本 | 中等文本 |
+</code></pre><table><thead><tr><th>一个普通标题</th><th>一个普通标题</th><th>一个普通标题</th></tr></thead><tbody><tr><td>短文本</td><td>中等文本</td><td>稍微长一点的文本</td></tr><tr><td>稍微长一点的文本</td><td>短文本</td><td>中等文本</td></tr></tbody></table><p>相关代码</p><pre><code>| 左对齐标题 | 右对齐标题 | 居中对齐标题 |
+| :------| ------: | :------: |
+| 短文本 | 中等文本 | 稍微长一点的文本 |
+| 稍微长一点的文本 | 短文本 | 中等文本 |
+</code></pre><table><thead><tr><th style="text-align:left">左对齐标题</th><th style="text-align:right">右对齐标题</th><th style="text-align:center">居中对齐标题</th></tr></thead><tbody><tr><td style="text-align:left">短文本</td><td style="text-align:right">中等文本</td><td style="text-align:center">稍微长一点的文本</td></tr><tr><td style="text-align:left">稍微长一点的文本</td><td style="text-align:right">短文本</td><td style="text-align:center">中等文本</td></tr></tbody></table><p>简单语法介绍到这里，更详细的语法或高级语法可以参考一下链接</p><blockquote><p><a href="http://wowubuntu.com/markdown/" target="_blank" rel="noopener">Markdown语法说明（简体中文版）</a><br><a href="http://blog.leanote.com/post/freewalk/Markdown-%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C" target="_blank" rel="noopener">Markdown 语法手册 （完整整理版）</a><br><a href="https://www.zybuluo.com/mdeditor?url=http://www.zybuluo.com/static/editor/md-help.markdown" target="_blank" rel="noopener">Cmd Markdown 编辑阅读器- 作业部落出品</a></p></blockquote><p>本文参考链接<br><a href="https://daringfireball.net/projects/markdown/syntax" target="_blank" rel="noopener">Markdown: Syntax</a><br><br><a href="http://www.williamlong.info/archives/4319.html" target="_blank" rel="noopener">好用的Markdown编辑器一览</a><br><br><a href="http://www.jianshu.com/p/1e402922ee32#" target="_blank" rel="noopener">Markdown——入门指南</a><br><br><a href="http://www.jianshu.com/p/PpDNMG" target="_blank" rel="noopener">Markdown写作浅谈</a><br></p></div><div id="disqus-comment"><div id="disqus_thread"></div><style>.disqus_click_btn{line-height:30px;margin:0;min-width:50px;padding:0 14px;display:inline-block;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;text-transform:uppercase;letter-spacing:0;overflow:hidden;will-change:box-shadow;transition:box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);outline:0;cursor:pointer;text-decoration:none;text-align:center;vertical-align:middle;border:0;background:rgba(158,158,158,.2);box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);color:#fff;background-color:#757575;text-shadow:0;display:none}</style><div class="btn_click_load"> <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config=function(){this.page.url="https://gl09025.github.io/hexo-blog/2017/02/09/MarkDown介绍/",this.page.identifier="https://gl09025.github.io/hexo-blog/2017/02/09/MarkDown介绍/"}</script><script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 4000,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//ganliblog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//ganliblog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script></div><style>#disqus-comment{background-color:#eee;padding:2pc}</style></div><nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col"> <a href="/2017/02/11/HTML知识点/" id="post_nav-newer" class="prev-content"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation"> <i class="material-icons">arrow_back</i></button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新篇</a><div class="section-spacer"></div> <a href="/2017/02/08/使用Travis CI持续部署Hexo博客/" id="post_nav-older" class="next-content">旧篇 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation"> <i class="material-icons">arrow_forward</i></button></a></nav></div></div><div class="sidebar-overlay"></div><aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation"><div id="sidebar-main"><div class="sidebar-header header-cover" style="background-image:url(/img/sidebar_header.png)"><div class="top-bar"></div> <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display:initial" data-upgraded=",MaterialButton,MaterialRipple"> <i class="material-icons">clear_all</i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button><div class="sidebar-image"> <img src="/img/avatar.png" alt="GanLi's avatar"></div> <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">gl09025@gmail.com<b class="caret"></b></a></div><ul class="nav sidebar-nav"><li class="dropdown"><ul id="settings-dropdown" class="dropdown-menu"><li> <a href="mailto:gl09025@gmail.com" target="_blank" title="Email Me"><i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i> Email Me</a></li></ul></li><li id="sidebar-first-li"> <a href="/"><i class="material-icons sidebar-material-icons">home</i> 主页</a></li><li class="dropdown"> <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown"><i class="material-icons sidebar-material-icons">chrome_reader_mode</i> 分类<b class="caret"></b></a><ul class="dropdown-menu"><li> <a class="sidebar_archives-link" href="/categories/技术/">技术<span class="sidebar_archives-count">29</span></a></li><li><a class="sidebar_archives-link" href="/categories/数学/">数学<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/科学上网/">科学上网<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件/">软件<span class="sidebar_archives-count">3</span></a></li></ul></li><li> <a href="/timeline.html" title="归档"><i class="material-icons sidebar-material-icons">inbox</i> 归档</a></li><li> <a href="/tags.html" title="标签云"><i class="material-icons sidebar-material-icons">cloud</i> 标签云</a></li><li class="divider"></li><li> <a href="/archives">文章总数 <span class="sidebar-badge">35</span></a></li><li class="divider"></li></ul></div></aside><div id="back-to-top" class="toTop-wrap"> <a href="#top" class="toTop"><i class="material-icons footer_top-i">expand_less</i></a></div><footer class="mdl-mini-footer" id="bottom"><div class="mdl-mini-footer--left-section sns-list"> <a href="https://github.com/gl09025" target="_blank"><button class="mdl-mini-footer--social-btn social-btn footer-sns-github"> <span class="visuallyhidden">Github</span></button></a></div><div id="copyright"> Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd=new Date;document.write("&nbsp;"+fd.getFullYear()+"&nbsp;")</script>GanLi's Blog<br><p>Hosted by <a href="https://pages.coding.me" style="font-weight:700">Coding Pages</a></p></div><div class="mdl-mini-footer--right-section"><div><div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div><div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div></div></div></footer><script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==",!0)</script><script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==",!0)</script><script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==",!0)</script><script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script><script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script><script>AV.initialize("zrrnQyxTXBy3gPT2gXjAEYxf-gzGzoHsz","sj1mlgeMLkhsi3nUd6JYs1zi")</script><script type="text/ls-javascript" id="leancloud-views-script">
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script><script>var agent=navigator.userAgent.toLowerCase();agent.indexOf("ucbrowser")>0&&(document.write('<link rel="stylesheet" href="/css/uc.css">'),alert("由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。"))</script><script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==",!0)</script><script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script><script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script><script>!function(){for(var e=document.querySelectorAll('script[type="text/ls-javascript"]'),r=0;r<e.length;++r){var o=e[r];lsloader.runInlineScript(o.id,o.id)}}(),console.log("\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n","color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;","color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;")</script></main></div></body></html>
