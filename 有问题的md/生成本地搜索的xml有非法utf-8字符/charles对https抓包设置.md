@@ -10,7 +10,7 @@ categories:
 thumbnail:
 ---
 
-> charles在对https网站进行抓包时请求里的很多都是乱码，网上查询了是需要安装charles的证书，但我在macOS sierra上安装时遇到了一个错误。。。
+## charles在对https网站进行抓包时请求里的很多都是乱码，网上查询了是需要安装charles的证书，但我在macos sierra上安装时遇到了一个错误。。。
 
 # 安装证书
 
@@ -20,7 +20,7 @@ help->ssl proxying->install charles root certificate
 会遇到以下错误
 ![cannotbemodified](https://raw.githubusercontent.com/gl09025/image_respository/master/2018%E5%B9%B401%E6%9C%8812%E6%97%A5/cannotbemodified.png)
 
-遇到这个错误，我查了四五十分钟，没什么结果，其实报错信息很明显，就是不能在“System Roots”里面安装证书，只能在login里安装证书。（论学好英语的重要性 <img src="http://www.webpagefx.com/tools/emoji-cheat-sheet/graphics/emojis/expressionless.png" height="20" width="20" align="absmiddle">）
+遇到这个错误，我查了四五十分钟，没什么结果，其实报错信息很明显，就是不能在“System Roots”里面安装证书，只能在login里安装证书。（论学好英语的重要性)
 
 ## 解决办法
 
